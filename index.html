@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blanchard | Художественная галерея</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/simplebar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font">
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/simplebar.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/iquery-ui.js"></script>
+</head>
+<body class="body">
+    <header class="header">
+        <section>
+            <div class="container header-position">
+                <img src="img/logo.png" alt="logo" class="logo">
+                <h1 class="caption-hidden">Blanchard | Художественная галерея</h1>
+                <nav class="menu-list">
+                    <ul class="list-reset menu-list">
+                        <li class="menu-list-item"><a href="#abbout" class="menu-list-item-link">О нас</a></li>
+                        <li class="menu-list-item"><a href="#gallery" class="menu-list-item-link">Галерея</a></li>
+                        <li class="menu-list-item"><a href="#catalog" class="menu-list-item-link">Каталог</a></li>
+                        <li class="menu-list-item"><a href="#event" class="menu-list-item-link">События</a></li>
+                        <li class="menu-list-item"><a href="#publications" class="menu-list-item-link">Издания</a></li>
+                        <li class="menu-list-item"><a href="#project" class="menu-list-item-link">Проекты</a></li>
+                        <li class="menu-list-item"><a href="#contacts" class="menu-list-item-link">Контакты</a></li>
+                    </ul>
+                    <button type="button" class="btn sign-in-btn">Войти</button>
+                </nav>
+            </div>
+        </section>
+        <section class="top-banner">
+            <div class="section-filter">
+                <div class="container section-filter-position">
+                    <ul class="list-reset list-under-menu">
+                        <li class="list-under-menu-item">
+                            <div>
+                            <button class="btn under-menu-btn" data-path="realizm">Реализм</button>
+                            </div>
+                            <div class="droppaun" data-target="realizm" id="droppaun">
+                                <ul class="list-reset container-drop" data-simplebar>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-1" href="#">Тинторетто</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-2" href="#">Фридрих</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-3" href="#">Леонардо</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-4" href="#">Верроккьо</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-5" href="#">Фридрих</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-6" href="#">Тинторетто</button></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list-under-menu-item">
+                            <button class="btn under-menu-btn" data-path="ipresionizm">Импрессионизм</button>
+                            <div class="droppaun" data-target="ipresionizm">
+                                <ul class="list-reset container-drop" data-simplebar>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-1" href="#">Тинторетто</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-2" href="#">Фридрих</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-3" href="#">Леонардо</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-4" href="#">Верроккьо</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-5" href="#">Фридрих</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-6" href="#">Тинторетто</button></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list-under-menu-item">
+                            <button class="btn under-menu-btn" data-path="postipresionizm">Постимпрессионизм</button>
+                            <div class="droppaun" data-target="postipresionizm">
+                                <ul class="list-reset container-drop" data-simplebar>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-1" href="#">Тинторетто</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-2" href="#">Фридрих</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-3" href="#">Леонардо</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-4" href="#">Верроккьо</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-5" href="#">Фридрих</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-6" href="#">Тинторетто</button></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list-under-menu-item">
+                            <button class="btn under-menu-btn" data-path="avangard">Авангард</button>
+                            <div class="droppaun" data-target="avangard">
+                                <ul class="list-reset container-drop" data-simplebar>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-1" href="#">Тинторетто</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-2" href="#">Фридрих</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-3" href="#">Леонардо</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-4" href="#">Верроккьо</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-5" href="#">Фридрих</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-6" href="#">Тинторетто</button></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="list-under-menu-item">
+                            <button class="btn under-menu-btn" data-path="futurizm">Футуризм</button>
+                            <div class="droppaun" data-target="futurizm">
+                                <ul class="list-reset container-drop" data-simplebar>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-1" href="#">Тинторетто</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-2" href="#">Фридрих</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-3" href="#">Леонардо</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-4" href="#">Верроккьо</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-5" href="#">Фридрих</button></li>
+                                    <li class="drop-item"><button class="btn drop-item-link drop-1-6" href="#">Тинторетто</button></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="search">
+                        <button type="submit" aria-label="Поиск" class="search-button"></button>
+						<input type="search" placeholder="Поиск по сайту" class="search-input"> 
+					</form>
+                </div>
+            </div>
+            <div class="swiper-container first-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide first-slider-1 animate-slide">
+                    </div>
+                    <div class="swiper-slide first-slider-2 animate-slide">
+                    </div>
+                    <div class="swiper-slide first-slider-3 animate-slide">
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <div class="container">
+                <div class="slider-text-position">
+                    <h2 class="slide-caption">Прикоснитесь к прекрасному</h2>
+                    <p class="slide-text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+                    <button class="btn slide-button" type="button">Подписаться на рассылку</button>
+                </div>
+            </div>
+            <script>
+                var mySwiper = new Swiper('.first-slider', {
+                    direction: 'horizontal',
+                    slidesPerView: 1,
+                    loop: true,
+                    // spaceBetween: 200,
+
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+
+                    autoplay: {
+                        delay: 4500,
+                    },
+                })
+            </script>
+        </section>
+    </header>
+    <main>
+        <section class="section-abbout" id="abbout">
+            <div class="container">
+                <h2 class="main-caption">О нас</h2>
+                <p class="abboit-text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+            </div>
+        </section>
+        <section class="section-gallery" id="gallery">
+            <div class="container gallery-position">
+                <div class="gallery-filter">
+                    <h2 class="main-caption gallery-caption">Галерея</h2>
+                    <form class="gallery-form">
+                            <label class="form-gallery-label" for="selectCustom">Фильтровать по:</label>
+                            <select name="select" id="selectCustom">
+                                <option value="0">Автор</option>
+                                <option value="1">Направление</option>
+                                <option value="2">Техника</option>
+                            </select>
+                    </form>
+                    <div class="gallery-filter-text-position">
+                        <p class="gallery-text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией. </p>
+                    </div>
+                </div>
+                <div class="gallery-preview">
+                    <div class="swiper-container second-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide gallery-slide">
+                              <div class="hover-slider"></div>
+                          </div>
+                          <div class="swiper-slide gallery-slide">
+                            <div class="hover-slider"></div>
+                        </div>
+                        <div class="swiper-slide gallery-slide">
+                            <div class="hover-slider"></div>
+                        </div>
+                        <div class="swiper-slide gallery-slide">
+                            <div class="hover-slider"></div>
+                        </div>
+                        <div class="swiper-slide gallery-slide">
+                            <div class="hover-slider"></div>
+                        </div>
+                        <div class="swiper-slide gallery-slide">
+                            <div class="hover-slider"></div>
+                        </div>
+                        <div class="swiper-slide gallery-slide">
+                            <div class="hover-slider"></div>
+                        </div>
+                        <div class="swiper-slide gallery-slide">
+                            <div class="hover-slider"></div>
+                        </div>
+                        <div class="swiper-slide gallery-slide">
+                            <div class="hover-slider"></div>
+                        </div>
+                        <div class="swiper-slide gallery-slide">
+                            <div class="hover-slider"></div>
+                        </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination pagination2"></div>
+                        <div class="swiper-button-next swiper-button-next-gallery" aria-disabled="true"></div>
+                        <div class="swiper-button-prev swiper-button-prev-gallery"></div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            var swiper = new Swiper('.second-slider', {
+                slidesPerView: 3,
+                slidesPerColumn: 2,
+                spaceBetween: 50,
+                
+                pagination: {
+                    el: '.pagination2',
+                    type: 'fraction',
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        <section class="section-catalog" id="catalog">
+            <div class="container">
+                <div class="tabs-position">
+                    <h2 class="main-caption catalog-caption">Каталог</h2>
+                        <ul class="catalog-countries list-reset">
+                            <li class="catalog-countries-item"><button type="button" class="btn countries-btn-fra tabs-btn open" data-path="france" aria-label="Франция"></button></li>
+                            <li class="catalog-countries-item"><button type="button" class="btn countries-btn-germ tabs-btn" data-path="germani" aria-label="Германия"></button></li>
+                            <li class="catalog-countries-item"><button type="button" class="btn countries-btn-italy tabs-btn" data-path="italy" aria-label="Италия"></button></li>
+                            <li class="catalog-countries-item"><button type="button" class="btn countries-btn-rus tabs-btn" data-path="russia" aria-label="Россия"></button></li>
+                            <li class="catalog-countries-item"><button type="button" class="btn countries-btn-belg tabs-btn" data-path="belgia" aria-label="Бельгия"></button></li>
+                        </ul>
+                </div>
+                <div class="tab-content tab-content-active" data-target="france">
+                    <p class="tabs-text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+                    <div class="position-biography">
+                        <article class="biography biographi-state open-biograph" data-target="Domenico">
+                            <img class="biography-img" src="img/tabs-image1.jpg" alt="Доменико Гирландайо">
+                            <h3 class="artists-name">Доменико Гирландайо</h3>
+                            <p class="biography-date">2 июня 1448 — 11 января 1494.</p>
+                            <p class="biography-description">
+                                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="Benedetto">
+                            <img class="biography-img" src="img/binedeto.jpg" alt="Бенедетто ди Биндо">
+                            <h3 class="artists-name">Бенедетто ди Биндо</h3>
+                            <p class="biography-date">1380 — 1417.</p>
+                            <p class="biography-description">
+                                Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать, «второго ряда», несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных заказов, включая работы в Сиенском соборе (работы в главном соборе республики второстепенным художникам не поручались).
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="Bergone">
+                            <img class="biography-img" src="img/bergone.jpg" alt="Амброджо Бергоньоне">
+                            <h3 class="artists-name">Амброджо Бергоньоне</h3>
+                            <p class="biography-date">1453 — 1523.</p>
+                            <p class="biography-description">
+                                Прозвище говорит о его тяготении к бургундской школе, по манере ему близок Винченцо Фоппа. Испытал влияние Леонардо да Винчи. Наиболее известен работами 1486—1494 в монастырской обители картезианцев Чертоза ди Павия. Позднее работал в Милане в базилике Сант-Эусторджо и церкви Сан-Сатиро, после 1497 — в Лоди, в 1512 — в Бергамо, незадолго до смерти — снова в Милане, в базилике Сан-Симпличано.
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="francesko">
+                            <img class="biography-img" src="img/franchesko.jpg" alt="Франческо Биссоло">
+                            <h3 class="artists-name">Франческо Биссоло</h3>
+                            <p class="biography-date">1470 — 20 апреля 1554.</p>
+                            <p class="biography-description">
+                                Сын художника. Ученик Джованни Беллини. С 1490 переехал в мастерскую Беллини. С 1492 по 1530 год работал в Венеции. Помогал учителю в работе над украшением Большого зала Совета Дворца дожей (Венеция). Принимал участие в создании украшений Церкви Иль Реденторе в Венеции.Художник эпохи Возрождения.
+                            </p>
+                        </article>
+                        <div class="list-artists-position">
+                            <div class="list-artists list-reset accordion">
+                                <h3 class="list-artists-link">C 1400 по 1499 гг.</h3>
+                                <div class="list-artists-item">
+                                    <ul class="list-reset list-artists-links-profile">
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Benedetto">Бенедетто ди Биндо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Bergone">Бергоньоне,Амброджо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="francesko"> Франческо,Биссоло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="boltraff">Больтраффио</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="djovanni">Джованни Бонсиньори</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Botich">Франческо Боттичини</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Rafaelo">Рафаэлло Брамантино Бреа</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Luudovig">Людовико Бьяджо д’Антонио Туччи</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Andrea">Веккьетта Андреа Верроккьо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn active-btn" type="button" data-path="Domenico">Доменико Гирландайо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Granci">Гоццоли Граначчи</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="franc">Франческо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="chekko">Грегорио ди Чекко</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="ydine">Джованни да Удине</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="paulo">Джованни ди Паоло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="djordje">Джорджоне</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="partentino">Парентино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="bernand">Бернардо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pazelino"> Пезеллино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="perydjino">Пьетро Перуджино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="peryci">Перуцци</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="beldasare">Бальдассаре</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pizanelo">Пизанелло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pinty">Пинтуриккьо</button></li>
+                                    </ul>
+                                </div>
+                                <h3 class="list-artists-link">C 1500 по 1599 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1600 по 1699 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1700 по 1799 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1800 по 1899 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1900 по 1999 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 2000 г.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" data-target="germani">
+                    <p class="tabs-text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+                    <div class="position-biography">
+                        <article class="biography biographi-state open-biograph" data-target="Domenico">
+                            <img class="biography-img" src="img/tabs-image1.jpg" alt="Доменико Гирландайо">
+                            <h3 class="artists-name">Доменико Гирландайо</h3>
+                            <p class="biography-date">2 июня 1448 — 11 января 1494.</p>
+                            <p class="biography-description">
+                                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="Benedetto">
+                            <img class="biography-img" src="img/binedeto.jpg" alt="Бенедетто ди Биндо">
+                            <h3 class="artists-name">Бенедетто ди Биндо</h3>
+                            <p class="biography-date">1380 — 1417.</p>
+                            <p class="biography-description">
+                                Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать, «второго ряда», несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных заказов, включая работы в Сиенском соборе (работы в главном соборе республики второстепенным художникам не поручались).
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="Bergone">
+                            <img class="biography-img" src="img/bergone.jpg" alt="Амброджо Бергоньоне">
+                            <h3 class="artists-name">Амброджо Бергоньоне</h3>
+                            <p class="biography-date">1453 — 1523.</p>
+                            <p class="biography-description">
+                                Прозвище говорит о его тяготении к бургундской школе, по манере ему близок Винченцо Фоппа. Испытал влияние Леонардо да Винчи. Наиболее известен работами 1486—1494 в монастырской обители картезианцев Чертоза ди Павия. Позднее работал в Милане в базилике Сант-Эусторджо и церкви Сан-Сатиро, после 1497 — в Лоди, в 1512 — в Бергамо, незадолго до смерти — снова в Милане, в базилике Сан-Симпличано.
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="francesko">
+                            <img class="biography-img" src="img/franchesko.jpg" alt="Франческо Биссоло">
+                            <h3 class="artists-name">Франческо Биссоло</h3>
+                            <p class="biography-date">1470 — 20 апреля 1554.</p>
+                            <p class="biography-description">
+                                Сын художника. Ученик Джованни Беллини. С 1490 переехал в мастерскую Беллини. С 1492 по 1530 год работал в Венеции. Помогал учителю в работе над украшением Большого зала Совета Дворца дожей (Венеция). Принимал участие в создании украшений Церкви Иль Реденторе в Венеции.Художник эпохи Возрождения.
+                            </p>
+                        </article>
+                        <div class="list-artists-position">
+                            <div class="list-artists list-reset accordion">
+                                <h3 class="list-artists-link">C 1400 по 1499 гг.</h3>
+                                <div class="list-artists-item">
+                                    <ul class="list-reset list-artists-links-profile">
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Benedetto">Бенедетто ди Биндо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Bergone">Бергоньоне,Амброджо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="francesko"> Франческо,Биссоло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="boltraff">Больтраффио</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="djovanni">Джованни Бонсиньори</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Botich">Франческо Боттичини</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Rafaelo">Рафаэлло Брамантино Бреа</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Luudovig">Людовико Бьяджо д’Антонио Туччи</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Andrea">Веккьетта Андреа Верроккьо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn active-btn" type="button" data-path="Domenico">Доменико Гирландайо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Granci">Гоццоли Граначчи</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="franc">Франческо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="chekko">Грегорио ди Чекко</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="ydine">Джованни да Удине</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="paulo">Джованни ди Паоло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="djordje">Джорджоне</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="partentino">Парентино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="bernand">Бернардо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pazelino"> Пезеллино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="perydjino">Пьетро Перуджино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="peryci">Перуцци</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="beldasare">Бальдассаре</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pizanelo">Пизанелло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pinty">Пинтуриккьо</button></li>
+                                    </ul>
+                                </div>
+                                <h3 class="list-artists-link">C 1500 по 1599 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1600 по 1699 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1700 по 1799 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1800 по 1899 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1900 по 1999 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 2000 г.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" data-target="italy">
+                    <p class="tabs-text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+                    <div class="position-biography">
+                        <article class="biography biographi-state open-biograph" data-target="Domenico">
+                            <img class="biography-img" src="img/tabs-image1.jpg" alt="Доменико Гирландайо">
+                            <h3 class="artists-name">Доменико Гирландайо</h3>
+                            <p class="biography-date">2 июня 1448 — 11 января 1494.</p>
+                            <p class="biography-description">
+                                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="Benedetto">
+                            <img class="biography-img" src="img/binedeto.jpg" alt="Бенедетто ди Биндо">
+                            <h3 class="artists-name">Бенедетто ди Биндо</h3>
+                            <p class="biography-date">1380 — 1417.</p>
+                            <p class="biography-description">
+                                Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать, «второго ряда», несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных заказов, включая работы в Сиенском соборе (работы в главном соборе республики второстепенным художникам не поручались).
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="Bergone">
+                            <img class="biography-img" src="img/bergone.jpg" alt="Амброджо Бергоньоне">
+                            <h3 class="artists-name">Амброджо Бергоньоне</h3>
+                            <p class="biography-date">1453 — 1523.</p>
+                            <p class="biography-description">
+                                Прозвище говорит о его тяготении к бургундской школе, по манере ему близок Винченцо Фоппа. Испытал влияние Леонардо да Винчи. Наиболее известен работами 1486—1494 в монастырской обители картезианцев Чертоза ди Павия. Позднее работал в Милане в базилике Сант-Эусторджо и церкви Сан-Сатиро, после 1497 — в Лоди, в 1512 — в Бергамо, незадолго до смерти — снова в Милане, в базилике Сан-Симпличано.
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="francesko">
+                            <img class="biography-img" src="img/franchesko.jpg" alt="Франческо Биссоло">
+                            <h3 class="artists-name">Франческо Биссоло</h3>
+                            <p class="biography-date">1470 — 20 апреля 1554.</p>
+                            <p class="biography-description">
+                                Сын художника. Ученик Джованни Беллини. С 1490 переехал в мастерскую Беллини. С 1492 по 1530 год работал в Венеции. Помогал учителю в работе над украшением Большого зала Совета Дворца дожей (Венеция). Принимал участие в создании украшений Церкви Иль Реденторе в Венеции.Художник эпохи Возрождения.
+                            </p>
+                        </article>
+                        <div class="list-artists-position">
+                            <div class="list-artists list-reset accordion">
+                                <h3 class="list-artists-link">C 1400 по 1499 гг.</h3>
+                                <div class="list-artists-item">
+                                    <ul class="list-reset list-artists-links-profile">
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Benedetto">Бенедетто ди Биндо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Bergone">Бергоньоне,Амброджо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="francesko"> Франческо,Биссоло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="boltraff">Больтраффио</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="djovanni">Джованни Бонсиньори</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Botich">Франческо Боттичини</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Rafaelo">Рафаэлло Брамантино Бреа</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Luudovig">Людовико Бьяджо д’Антонио Туччи</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Andrea">Веккьетта Андреа Верроккьо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn active-btn" type="button" data-path="Domenico">Доменико Гирландайо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Granci">Гоццоли Граначчи</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="franc">Франческо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="chekko">Грегорио ди Чекко</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="ydine">Джованни да Удине</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="paulo">Джованни ди Паоло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="djordje">Джорджоне</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="partentino">Парентино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="bernand">Бернардо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pazelino"> Пезеллино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="perydjino">Пьетро Перуджино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="peryci">Перуцци</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="beldasare">Бальдассаре</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pizanelo">Пизанелло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pinty">Пинтуриккьо</button></li>
+                                    </ul>
+                                </div>
+                                <h3 class="list-artists-link">C 1500 по 1599 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1600 по 1699 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1700 по 1799 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1800 по 1899 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1900 по 1999 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 2000 г.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" data-target="russia">
+                    <p class="tabs-text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+                    <div class="position-biography">
+                        <article class="biography biographi-state open-biograph" data-target="Domenico">
+                            <img class="biography-img" src="img/tabs-image1.jpg" alt="Доменико Гирландайо">
+                            <h3 class="artists-name">Доменико Гирландайо</h3>
+                            <p class="biography-date">2 июня 1448 — 11 января 1494.</p>
+                            <p class="biography-description">
+                                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="Benedetto">
+                            <img class="biography-img" src="img/binedeto.jpg" alt="Бенедетто ди Биндо">
+                            <h3 class="artists-name">Бенедетто ди Биндо</h3>
+                            <p class="biography-date">1380 — 1417.</p>
+                            <p class="biography-description">
+                                Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать, «второго ряда», несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных заказов, включая работы в Сиенском соборе (работы в главном соборе республики второстепенным художникам не поручались).
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="Bergone">
+                            <img class="biography-img" src="img/bergone.jpg" alt="Амброджо Бергоньоне">
+                            <h3 class="artists-name">Амброджо Бергоньоне</h3>
+                            <p class="biography-date">1453 — 1523.</p>
+                            <p class="biography-description">
+                                Прозвище говорит о его тяготении к бургундской школе, по манере ему близок Винченцо Фоппа. Испытал влияние Леонардо да Винчи. Наиболее известен работами 1486—1494 в монастырской обители картезианцев Чертоза ди Павия. Позднее работал в Милане в базилике Сант-Эусторджо и церкви Сан-Сатиро, после 1497 — в Лоди, в 1512 — в Бергамо, незадолго до смерти — снова в Милане, в базилике Сан-Симпличано.
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="francesko">
+                            <img class="biography-img" src="img/franchesko.jpg" alt="Франческо Биссоло">
+                            <h3 class="artists-name">Франческо Биссоло</h3>
+                            <p class="biography-date">1470 — 20 апреля 1554.</p>
+                            <p class="biography-description">
+                                Сын художника. Ученик Джованни Беллини. С 1490 переехал в мастерскую Беллини. С 1492 по 1530 год работал в Венеции. Помогал учителю в работе над украшением Большого зала Совета Дворца дожей (Венеция). Принимал участие в создании украшений Церкви Иль Реденторе в Венеции.Художник эпохи Возрождения.
+                            </p>
+                        </article>
+                        <div class="list-artists-position">
+                            <div class="list-artists list-reset accordion">
+                                <h3 class="list-artists-link">C 1400 по 1499 гг.</h3>
+                                <div class="list-artists-item">
+                                    <ul class="list-reset list-artists-links-profile">
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Benedetto">Бенедетто ди Биндо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Bergone">Бергоньоне,Амброджо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="francesko"> Франческо,Биссоло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="boltraff">Больтраффио</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="djovanni">Джованни Бонсиньори</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Botich">Франческо Боттичини</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Rafaelo">Рафаэлло Брамантино Бреа</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Luudovig">Людовико Бьяджо д’Антонио Туччи</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Andrea">Веккьетта Андреа Верроккьо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn active-btn" type="button" data-path="Domenico">Доменико Гирландайо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Granci">Гоццоли Граначчи</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="franc">Франческо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="chekko">Грегорио ди Чекко</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="ydine">Джованни да Удине</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="paulo">Джованни ди Паоло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="djordje">Джорджоне</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="partentino">Парентино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="bernand">Бернардо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pazelino"> Пезеллино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="perydjino">Пьетро Перуджино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="peryci">Перуцци</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="beldasare">Бальдассаре</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pizanelo">Пизанелло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pinty">Пинтуриккьо</button></li>
+                                    </ul>
+                                </div>
+                                <h3 class="list-artists-link">C 1500 по 1599 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1600 по 1699 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1700 по 1799 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1800 по 1899 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1900 по 1999 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 2000 г.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" data-target="belgia">
+                    <p class="tabs-text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+                    <div class="position-biography">
+                        <article class="biography biographi-state open-biograph" data-target="Domenico">
+                            <img class="biography-img" src="img/tabs-image1.jpg" alt="Доменико Гирландайо">
+                            <h3 class="artists-name">Доменико Гирландайо</h3>
+                            <p class="biography-date">2 июня 1448 — 11 января 1494.</p>
+                            <p class="biography-description">
+                                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="Benedetto">
+                            <img class="biography-img" src="img/binedeto.jpg" alt="Бенедетто ди Биндо">
+                            <h3 class="artists-name">Бенедетто ди Биндо</h3>
+                            <p class="biography-date">1380 — 1417.</p>
+                            <p class="biography-description">
+                                Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать, «второго ряда», несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных заказов, включая работы в Сиенском соборе (работы в главном соборе республики второстепенным художникам не поручались).
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="Bergone">
+                            <img class="biography-img" src="img/bergone.jpg" alt="Амброджо Бергоньоне">
+                            <h3 class="artists-name">Амброджо Бергоньоне</h3>
+                            <p class="biography-date">1453 — 1523.</p>
+                            <p class="biography-description">
+                                Прозвище говорит о его тяготении к бургундской школе, по манере ему близок Винченцо Фоппа. Испытал влияние Леонардо да Винчи. Наиболее известен работами 1486—1494 в монастырской обители картезианцев Чертоза ди Павия. Позднее работал в Милане в базилике Сант-Эусторджо и церкви Сан-Сатиро, после 1497 — в Лоди, в 1512 — в Бергамо, незадолго до смерти — снова в Милане, в базилике Сан-Симпличано.
+                            </p>
+                        </article>
+                        <article class="biography biographi-state" data-target="francesko">
+                            <img class="biography-img" src="img/franchesko.jpg" alt="Франческо Биссоло">
+                            <h3 class="artists-name">Франческо Биссоло</h3>
+                            <p class="biography-date">1470 — 20 апреля 1554.</p>
+                            <p class="biography-description">
+                                Сын художника. Ученик Джованни Беллини. С 1490 переехал в мастерскую Беллини. С 1492 по 1530 год работал в Венеции. Помогал учителю в работе над украшением Большого зала Совета Дворца дожей (Венеция). Принимал участие в создании украшений Церкви Иль Реденторе в Венеции.Художник эпохи Возрождения.
+                            </p>
+                        </article>
+                        <div class="list-artists-position">
+                            <div class="list-artists list-reset accordion">
+                                <h3 class="list-artists-link">C 1400 по 1499 гг.</h3>
+                                <div class="list-artists-item">
+                                    <ul class="list-reset list-artists-links-profile">
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Benedetto">Бенедетто ди Биндо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Bergone">Бергоньоне,Амброджо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="francesko"> Франческо,Биссоло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="boltraff">Больтраффио</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="djovanni">Джованни Бонсиньори</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Botich">Франческо Боттичини</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Rafaelo">Рафаэлло Брамантино Бреа</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Luudovig">Людовико Бьяджо д’Антонио Туччи</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Andrea">Веккьетта Андреа Верроккьо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn active-btn" type="button" data-path="Domenico">Доменико Гирландайо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="Granci">Гоццоли Граначчи</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="franc">Франческо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="chekko">Грегорио ди Чекко</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="ydine">Джованни да Удине</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="paulo">Джованни ди Паоло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="djordje">Джорджоне</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="partentino">Парентино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="bernand">Бернардо</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pazelino"> Пезеллино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="perydjino">Пьетро Перуджино</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="peryci">Перуцци</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="beldasare">Бальдассаре</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pizanelo">Пизанелло</button></li>
+                                        <li class="list-artists-links-profile-item"><button class="btn artists-btn" type="button" data-path="pinty">Пинтуриккьо</button></li>
+                                    </ul>
+                                </div>
+                                <h3 class="list-artists-link">C 1500 по 1599 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1600 по 1699 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1700 по 1799 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1800 по 1899 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 1900 по 1999 гг.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                                <h3 class="list-artists-link">C 2000 г.</h3>
+                                <div class="list-artists-item">
+                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(function() {
+                    $( ".accordion" ).accordion({
+                        active: false,
+                        collapsible: true,
+                        heightStyle: "content",
+                    } );
+                });
+            </script>   
+        </section>
+        <section class="section-events" id="event">
+            <div class="container">
+                <h2 class="main-caption">События</h2>
+                <div class="position-card-events">
+                    <div class="card-event">
+                        <div class="border-text-card">
+                            <div class="text-position-event">
+                                <p class="card-event-museum">Музей им. Щусева с 20 марта по 30 апреля</p>
+                                <h3 class="card-events-caption">Книжная гравюра в живом восприятии</h3>
+                                <p class="card-events-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                                <a href="#" class="card-events-link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-event">
+                        <div class="border-text-card">
+                            <div class="text-position-event">
+                                <p class="card-event-museum">Музей им. Щусева с 20 марта по 30 апреля</p>
+                                <h3 class="card-events-caption">Книжная гравюра в живом восприятии</h3>
+                                <p class="card-events-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                                <a href="#" class="card-events-link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-event">
+                        <div class="border-text-card">
+                            <div class="text-position-event">
+                                <p class="card-event-museum">Музей им. Щусева с 20 марта по 30 апреля</p>
+                                <h3 class="card-events-caption">Книжная гравюра в живом восприятии</h3>
+                                <p class="card-events-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                                <a href="#" class="card-events-link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="open-all-events event-disable">
+                    <div class="position-card-events">
+                        <div class="card-event">
+                            <div class="border-text-card">
+                                <div class="text-position-event">
+                                    <p class="card-event-museum">Музей им. Щусева с 20 марта по 30 апреля</p>
+                                    <h3 class="card-events-caption">Книжная гравюра в живом восприятии</h3>
+                                    <p class="card-events-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                                    <a href="#" class="card-events-link">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-event">
+                            <div class="border-text-card">
+                                <div class="text-position-event">
+                                    <p class="card-event-museum">Музей им. Щусева с 20 марта по 30 апреля</p>
+                                    <h3 class="card-events-caption">Книжная гравюра в живом восприятии</h3>
+                                    <p class="card-events-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                                    <a href="#" class="card-events-link">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-event">
+                            <div class="border-text-card">
+                                <div class="text-position-event">
+                                    <p class="card-event-museum">Музей им. Щусева с 20 марта по 30 апреля</p>
+                                    <h3 class="card-events-caption">Книжная гравюра в живом восприятии</h3>
+                                    <p class="card-events-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                                    <a href="#" class="card-events-link">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-btn-position">
+                    <button type="button" class="btn event-btn">Все события</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-publications" id="publications">
+            <div class="container publications-position">
+                <div class="publications-filter">
+                    <h2 class="main-caption publications-caption">Издания</h2>
+                    <p class="form-publications-categori">Категории</p>
+                    <form action="" class="publications-form">
+                        <label for="check" class="label">
+                            <input class="checkbox" type="checkbox" name="check" id="check">
+                            <span class="checkbox-span">Бестселлеры</span>
+                        </label>
+                        <label for="check1" class="label">
+                            <input class="checkbox" type="checkbox" name="check" id="check1">
+                            <span class="checkbox-span" >Искусство</span>
+                        </label>
+                        <label for="check2" class="label">
+                            <input class="checkbox" type="checkbox" name="check" id="check2">
+                            <span class="checkbox-span">Архитектура</span>
+                        </label>
+                        <label for="check3" class="label">
+                            <input class="checkbox" type="checkbox" name="check" id="check3">
+                            <span class="checkbox-span">Дизайн</span>
+                        </label>
+                        <label for="check4" class="label">
+                            <input class="checkbox" type="checkbox" name="check" id="check4">
+                            <span class="checkbox-span">Мода</span>
+                        </label>
+                        <label for="check5" class="label">
+                            <input class="checkbox" type="checkbox" name="check" id="check5">
+                            <span class="checkbox-span">Детям</span>
+                        </label>
+                        <label for="check6" class="label">
+                            <input class="checkbox" type="checkbox" name="check" id="check6">
+                            <span class="checkbox-span">Художественная литература</span>
+                        </label>
+                        <label for="check7" class="label">
+                            <input class="checkbox" type="checkbox" name="check" id="check7">
+                            <span class="checkbox-span">Публицистика</span>
+                        </label>
+                        <label for="check8" class="label">
+                            <input class="checkbox" type="checkbox" name="check" id="check8">
+                            <span class="checkbox-span">Путеводители</span>
+                        </label>
+                        <label for="check9" class="label">
+                            <input class="checkbox" type="checkbox" name="check" id="check9">
+                            <span class="checkbox-span">Философия</span>
+                        </label>
+                        <label for="check10" class="label">
+                            <input class="checkbox" type="checkbox" name="check" id="check10">
+                            <span class="checkbox-span">Учебная литература</span>
+                        </label>
+                        <label for="check11" class="label">
+                            <input class="checkbox" type="checkbox" name="check" id="check11">
+                            <span class="checkbox-span">Журналы и газеты</span>
+                        </label>
+                        <div class="price-filter">
+                            <p class="price-filter-caption">Цена</p>
+                            <div class="price-filter-position">
+                                <span class="price-filter-text">От</span><input class="input-price min-price" type="text" value="50">
+                                <span class="price-filter-text">до</span><input class="input-price max-price" type="text" value="25 000"><span class="price-filter-text">руб.</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="publications-preview">
+                    <div class="swiper-container three-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide publications-slide">
+                            <div class="publications-card">
+                                <div class="publications-card-description-position">
+                                    <h4 class="publications-card-caption">Искусство цвета</h4>
+                                    <p class="publications-text-card">Иттен, Иоханнес</p>
+                                    <button type="button" class="btn publications-btn">Заказать</button>
+                                </div>
+                                <div>
+                                    <p class="publications-price">620 руб</p>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="swiper-slide publications-slide">
+                            <div class="publications-card">
+                                <div class="publications-card-description-position">
+                                    <h4 class="publications-card-caption">Искусство цвета</h4>
+                                    <p class="publications-text-card">Иттен, Иоханнес</p>
+                                    <button type="button" class="btn publications-btn">Заказать</button>
+                                </div>
+                                <div>
+                                    <p class="publications-price">620 руб</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide publications-slide">
+                            <div class="publications-card">
+                                <div class="publications-card-description-position">
+                                    <h4 class="publications-card-caption">Искусство цвета</h4>
+                                    <p class="publications-text-card">Иттен, Иоханнес</p>
+                                    <button type="button" class="btn publications-btn">Заказать</button>
+                                </div>
+                                <div>
+                                    <p class="publications-price">620 руб</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide publications-slide">
+                            <div class="publications-card">
+                                <div class="publications-card-description-position">
+                                    <h4 class="publications-card-caption">Искусство цвета</h4>
+                                    <p class="publications-text-card">Иттен, Иоханнес</p>
+                                    <button type="button" class="btn publications-btn">Заказать</button>
+                                </div>
+                                <div>
+                                    <p class="publications-price">620 руб</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide publications-slide">
+                            <div class="publications-card">
+                                <div class="publications-card-description-position">
+                                    <h4 class="publications-card-caption">Искусство цвета</h4>
+                                    <p class="publications-text-card">Иттен, Иоханнес</p>
+                                    <button type="button" class="btn publications-btn">Заказать</button>
+                                </div>
+                                <div>
+                                    <p class="publications-price">620 руб</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide publications-slide">
+                            <div class="publications-card">
+                                <div class="publications-card-description-position">
+                                    <h4 class="publications-card-caption">Искусство цвета</h4>
+                                    <p class="publications-text-card">Иттен, Иоханнес</p>
+                                    <button type="button" class="btn publications-btn">Заказать</button>
+                                </div>
+                                <div>
+                                    <p class="publications-price">620 руб</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide publications-slide">
+                            <div class="publications-card">
+                                <div class="publications-card-description-position">
+                                    <h4 class="publications-card-caption">Искусство цвета</h4>
+                                    <p class="publications-text-card">Иттен, Иоханнес</p>
+                                    <button type="button" class="btn publications-btn">Заказать</button>
+                                </div>
+                                <div>
+                                    <p class="publications-price">620 руб</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide publications-slide">
+                            <div class="publications-card">
+                                <div class="publications-card-description-position">
+                                    <h4 class="publications-card-caption">Искусство цвета</h4>
+                                    <p class="publications-text-card">Иттен, Иоханнес</p>
+                                    <button type="button" class="btn publications-btn">Заказать</button>
+                                </div>
+                                <div>
+                                    <p class="publications-price">620 руб</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination pagination2"></div>
+                        <div class="swiper-button-next swiper-button-next-gallery publish-next" aria-disabled="true"></div>
+                        <div class="swiper-button-prev swiper-button-prev-gallery publish-prev"></div>
+                      </div>
+                </div>
+            </div>
+        <script>
+            var swiper = new Swiper('.three-slider', {
+                slidesPerView: 3,
+                spaceBetween: 50,
+                
+                pagination: {
+                    el: '.pagination2',
+                    type: 'fraction',
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        </section>
+        <section class="section-project" id="project">
+            <div class="container">
+                <h2 class="main-caption">Проекты</h2>
+                <p class="project-text">Предварительные выводы: постоянное информационно-пропагандистское
+                 обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное <span class="text-tooltip-position">информационно&nbsp;-&nbsp;пропагандистское</span>&nbsp;обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть <span class="text-tooltip-position">рассмотрены</span> исключительно в разрезе маркетинговых и <span class="text-tooltip-position">финансовых</span> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="#">blanchard-art.ru/projects/about</a></p>
+                <div class="tooltip-position">
+                    <div class="tooltip-1"></div>
+                    <div class="tooltip-1-hover">
+                        <p class="tooltip-1-text">Пример современных тенденций - современная методология разработки </p>
+                    </div>
+                </div>
+                <div class="tooltip-position">
+                    <div class="tooltip-2"></div>
+                    <div class="tooltip-2-hover">
+                        <p class="tooltip-1-text">В стремлении повысить качество </p>
+                    </div>
+                </div>
+                <div class="tooltip-position">
+                    <div class="tooltip-3"></div>
+                    <div class="tooltip-3-hover">
+                        <p class="tooltip-1-text">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  </p>
+                    </div>
+                </div>
+                <h3 class="parthners-caption-slider">Партнёры проектов:</h3>
+                <div class="position-slider">
+                    <div class="swiper-button-prev-project"></div>
+                    <div class="swiper-container four-slider-container">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide four-slide"></div>
+                        <div class="swiper-slide four-slide"></div>
+                        <div class="swiper-slide four-slide"></div>
+                        <div class="swiper-slide four-slide"></div>
+                        <div class="swiper-slide four-slide"></div>
+                        <div class="swiper-slide four-slide"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next-project"></div>
+                </div>
+                </div>
+                <script>
+                    var mySwiper = new Swiper('.four-slider-container', {
+                        direction: 'horizontal',
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+    
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+
+                        navigation: {
+                            nextEl: '.swiper-button-next-project',
+                            prevEl: '.swiper-button-prev-project',
+                        },
+    
+                        // autoplay: {
+                        //     delay: 4500,
+                        // },
+                    })
+                </script>
+        </section>
+        <section class="section-contacts" id="contacts">
+            <div class="container">
+                <h2 class="main-caption">Контакты</h2>
+            </div>
+            <div class="position-contacts">
+                <div class="container">
+                    <div class="form-contacts">
+                        <h4 class="form-contacts-caption">Шоурум №4</h4>
+                        <p class="form-contacts-adress">Леонтьевский переулок, дом 5, строение 1</p>
+                        <form action="#">
+                            <legend class="form-contacts-legend">Заказать обратный звонок</legend>
+                            <input class="contacts-input" type="text" placeholder="Имя*">
+                            <input class="contacts-input" type="text" placeholder="Телефон*">
+                            <button class="btn contact-form-btn" type="submit">Заказать</button>
+                        </form>
+                        <p class="social-caption">Связаться в один клик</p>
+                        <ul class="list-reset social-list">
+                            <li class="social-list-item"> <a href="#" class="social-link social-whatsap"></a></li>
+                            <li class="social-list-item"> <a href="#" class="social-link social-teleg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="map-position">
+                    <div id="map" style="width: 1240px; height: 100%"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="image-position">
+                <img src="img/logo.png" alt="footer-logo">
+            </div>
+            <div class="social-footer-position">
+                <ul class="list-reset footer-social-list">
+                    <li class="footer-social-list-item"><a class="footer-social-link footer-vk" href="#"></a></li>
+                    <li class="footer-social-list-item"><a class="footer-social-link footer-inst" href="#"></a></li>
+                    <li class="footer-social-list-item"><a class="footer-social-link footer-fb" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/choices.min.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/artist-tab.js"></script>
+    <script src="js/events.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
+    <script src="js/droppaun.js"></script>
+    <script src="js/animate.js"></script>
+</body>
+</html>
