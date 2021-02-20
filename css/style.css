@@ -65,7 +65,14 @@ img{
 }
 
 .caption-hidden{
-    display: none;
+   position: absolute !important;
+   clip: rect(1px 1px 1px 1px);
+   clip: rect(1px, 1px, 1px, 1px);
+   padding: 0 !important;
+   border:  0 !important;
+   height: 1px !important;
+   width: 1px !important;
+   overflow: hidden;
 }
 
 /* Стили шапки */
@@ -93,23 +100,27 @@ img{
     display: flex;
 }
 
-.menu-list-item{
-    margin-right: 64px;
+.menu-list-nav-menu{
+    margin-right: 279px;
+}
+
+.position-btn-sign-in{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.menu-list-item:not(:last-child){
+    margin-right: 62px;
 }
 
 .menu-list-item a{
    color: #ffffff;
 }
 
-
-.menu-list-item:last-of-type{
-    margin-right: 279px;
-}
-
 .menu-list-item-link{
     font-size: 18px;
     font-weight: 600;
-    transition: 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
 }
 
 .menu-list-item-link:hover{
@@ -121,30 +132,29 @@ img{
 }
 
 .sign-in-btn{
-    width: 75px;
     font-size: 18px;
     font-weight: 400;
     color: #ffffff;
     background-color: unset;
-    background: url('../img/sign-in-arrow.svg') 0% 49% no-repeat;
+    background: url('../img/sign-in-arrow.svg') 0% 50% no-repeat;
     text-align: right;
-    transition: 0.2s ease-in-out;
+    padding-left: 18px;
+    transition: background 0.2s ease-in-out;
 }
 
 .sign-in-btn:hover{
     color: #C283F3;
     background-color: unset;
-    background: url('../img/hover-sign-in.svg') 0% 49% no-repeat;
+    background: url('../img/hover-sign-in.svg') 0% 50% no-repeat;
 }
 
 .sign-in-btn:active{
     color: #9D5CD0;
-    background: url('../img/active-sign-in.svg') 0% 49% no-repeat;
+    background: url('../img/active-sign-in.svg') 0% 50% no-repeat;
 }
 
 .top-banner{
-    position: relative;
-    top: 30px;
+    margin-top: 30px;
     height: 700px;
 }
 
@@ -169,10 +179,10 @@ img{
 }
 
 .slider-text-position{
-    width: 565px;
+    width: 605px;
     position: absolute;
     z-index: 1;
-    top: 85px;
+    top: 181px;
 }
 
 .slide-caption{
@@ -201,6 +211,9 @@ img{
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
+    transition-property: border,background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
 }
 
 .slide-button:hover{
@@ -227,14 +240,11 @@ img{
 
 .list-under-menu{
     display: flex;
-}
-
-.list-under-menu-item{
-    margin-right: 90px;
-}
-
-.list-under-menu-item:last-of-type{
     margin-right: 315px;
+}
+
+.list-under-menu-item:not(:last-child){
+    margin-right: 82px;
 }
 
 .under-menu-btn{
@@ -244,9 +254,11 @@ img{
     background-color: unset;
     padding-right: 23px;
     position: relative;
-    transition: 0.2s ease-in-out;
     background: url('../img/under-menu-arrow.svg') 100% 50% no-repeat;
     background-size: 14px 14px;
+    transition-property: color,background;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
 }
 
 /* .under-menu-btn::after{
@@ -262,15 +274,21 @@ img{
     transition: 0.2s ease-in-out;
 } */
 
-.list-under-menu-item:hover .under-menu-btn::after{
+/* .list-under-menu-item:hover .under-menu-btn::after{
     transform: rotate(180deg);
     top: 7px;
     filter: invert(33%) sepia(88%) saturate(543%) hue-rotate(232deg) brightness(60%) contrast(100%);
-}
+} */
 
 .under-menu-btn:hover{
     color: #9D5CD0;
     background: url('../img/under-btn-arrow-hover.svg') 100% 50% no-repeat;
+    background-size: 14px 14px;
+}
+
+.under-menu-btn:active{
+    color: #7943A4;
+    background: url('../img/under-menu-active-btn.svg') 100% 100% no-repeat;
     background-size: 14px 14px;
 }
 
@@ -285,13 +303,14 @@ img{
 }
 
 .search-input{
+    width: 218px;
     background-color: unset;
     border: none;
     padding-bottom: 3px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
     cursor: pointer;
     color: #ffffff;
-    transition: 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
 }
 
 .search-input::placeholder{
@@ -342,7 +361,7 @@ img{
 
 .btn-active{
     color: #7943A4;
-    background: url('../img/arrow-active.svg') 100% 50% no-repeat;
+    background: url('../img/under-menu-active-btn.svg') 100% 100% no-repeat;
     background-size: 14px 14px;
 }
 
