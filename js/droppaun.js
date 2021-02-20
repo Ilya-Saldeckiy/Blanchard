@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
             for (i = 0; i < dropdowns.length; i++){
                 var openDropdown = dropdowns[i];
                 var activeBtn = button[i];
-                if (openDropdown.classList.contains('tab-content-active')){
-                    openDropdown.classList.remove('tab-content-active')
+                if (openDropdown.classList.contains('dropdown-active')){
+                    openDropdown.classList.remove('dropdown-active')
                 }
                 if (activeBtn.classList.contains('btn-active')){
                     activeBtn.classList.remove('btn-active')
@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', function() {
             drop.classList.toggle('btn-active')
 
             const closeMenu = () => {
-                document.querySelector(`[data-target='${path}']`).classList.remove('tab-content-active')
+                document.querySelector(`[data-target='${path}']`).classList.remove('dropdown-active')
                 drop.classList.remove('btn-active')
             }
 
-            document.querySelector(`[data-target='${path}']`).classList.toggle('tab-content-active')
+            document.querySelector(`[data-target='${path}']`).classList.toggle('dropdown-active')
 
             document.addEventListener('keydown', (event) => {
                 if (event.code === 'Escape') {

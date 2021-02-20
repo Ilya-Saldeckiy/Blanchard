@@ -137,6 +137,16 @@ img{
     color: #7943A4;
 }
 
+.menu-list-item-link:focus,.sign-in-btn:focus,.search-input:focus,.search-button:focus{
+    color: #ffffff;
+    outline: 1px solid #7943A4;
+}
+
+/* .btn:focus{
+    border: 2px solid #C283F3;
+    padding: 10px;
+} */
+
 .sign-in-btn{
     font-size: 18px;
     font-weight: 400;
@@ -411,7 +421,13 @@ img{
     z-index: 2;
     position: absolute;
     top: 70px;
-    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown-active{
+    outline: none;
+    opacity: 1;
 }
 
 .container-drop{
@@ -464,6 +480,145 @@ img{
     background: url('../img/drop-1-1.png') no-repeat;
     background-size: cover;
 }
+
+
+
+
+
+
+.drop-2-1{
+    background: url('../img/drop-2-1.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-2-2{
+    background: url('../img/drop-2-2.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-2-3{
+    background: url('../img/drop-2-3.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-2-4{
+    background: url('../img/drop-2-4.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-2-5{
+    background: url('../img/drop-2-2.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-2-6{
+    background: url('../img/drop-2-3.png') no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+.drop-3-1{
+    background: url('../img/drop-3-1.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-3-2{
+    background: url('../img/drop-3-2.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-3-3{
+    background: url('../img/drop-3-3.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-3-4{
+    background: url('../img/drop-3-4.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-3-5{
+    background: url('../img/drop-3-2.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-3-6{
+    background: url('../img/drop-3-3.png') no-repeat;
+    background-size: cover;
+}
+
+
+
+.drop-4-1{
+    background: url('../img/drop-4-1.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-4-2{
+    background: url('../img/drop-4-2.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-4-3{
+    background: url('../img/drop-4-3.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-4-4{
+    background: url('../img/drop-4-4.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-4-5{
+    background: url('../img/drop-4-2.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-4-6{
+    background: url('../img/drop-4-3.png') no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+.drop-5-1{
+    background: url('../img/drop-5-1.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-5-2{
+    background: url('../img/drop-5-2.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-5-3{
+    background: url('../img/drop-5-3.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-5-4{
+    background: url('../img/drop-5-4.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-5-5{
+    background: url('../img/drop-5-2.png') no-repeat;
+    background-size: cover;
+}
+
+.drop-5-6{
+    background: url('../img/drop-5-3.png') no-repeat;
+    background-size: cover;
+}
+
+
 
 
 /* Стили основного контента */
@@ -611,8 +766,6 @@ img{
 .gallery-slide{
     width: 350px;
     height: 350px;
-    background: url('../img/second-slider-slide-1.jpg') no-repeat;
-    background-size: cover;
     position: relative;
 }
 
@@ -654,6 +807,9 @@ img{
     background-color: #666666;
     border-radius: 100%;
     color: #ffffff;
+    transition-property: border,background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
 }
 
 .swiper-button-prev-gallery{
@@ -663,6 +819,9 @@ img{
     height: 30px;
     background-color: #666666;
     border-radius: 100%;
+    transition-property: border,background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
 }
 
 .swiper-button-next-gallery:active{
@@ -700,20 +859,111 @@ img{
 }
 
 .gallery-slide:active::after{
-    display: block;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .gallery-slide::after{
     content: "";
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    height: 353px;
     display: block;
     background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
     position: absolute;
     left: 0;
     top: 0;
-    display: none;
+    opacity: 0;
     z-index: 10;
+}
+
+.gallery-slide-1{
+    background: url('../img/second-slider-slide-1.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-2{
+    background: url('../img/second-slider-slide-2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-3{
+    background: url('../img/second-slider-slide-3.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-4{
+    background: url('../img/second-slider-slide-4.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-5{
+    background: url('../img/second-slider-slide-5.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-6{
+    background: url('../img/second-slider-slide-6.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-7{
+    background: url('../img/second-slider-slide-7.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-8{
+    background: url('../img/second-slider-slide-8.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-9{
+    background: url('../img/second-slider-slide-9.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-10{
+    background: url('../img/second-slider-slide-10.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-11{
+    background: url('../img/second-slider-slide-11.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-12{
+    background: url('../img/second-slider-slide-12.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-13{
+    background: url('../img/second-slider-slide-13.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-14{
+    background: url('../img/second-slider-slide-14.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-15{
+    background: url('../img/second-slider-slide-15.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-16{
+    background: url('../img/second-slider-slide-16.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-17{
+    background: url('../img/second-slider-slide-17.jpg') no-repeat;
+    background-size: cover;
+}
+
+.gallery-slide-18{
+    background: url('../img/second-slider-slide-18.jpg') no-repeat;
+    background-size: cover;
 }
 
 .swiper-pagination{
@@ -723,12 +973,14 @@ img{
 .hover-slider{
     width: 300px;
     height: 300px;
-    margin: 25px auto;
+    /* margin: 25px auto; */
     background: url('../img/hover-slider.svg') 50% no-repeat;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    top: 25px;
+    left: 25px;
     z-index: 11;
 }
 
@@ -822,10 +1074,16 @@ img{
 
 .tab-content{
     display: none;
+    transition-property: border,background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
 }
 
 .tab-content-active{
     display: block;
+    transition-property: border,background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
 }
 
 .tabs-text{
@@ -948,7 +1206,7 @@ img{
 .artists-btn:hover{
     color: #9D5CD0;
     padding-bottom: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     border-bottom: 1px solid #9D5CD0;
 }
 
@@ -1434,17 +1692,17 @@ img{
 
 .tooltip-1{
     top: -152px;
-    left: 275px;
+    left: 292px;
 }
 
 .tooltip-2{
     top: -120px;
-    right: 640px;
+    right: 580px;
 }
 
 .tooltip-3{
     top: -87px;
-    left: 422px;
+    left: 448px;
 }
 
 .tooltip-1::after,.tooltip-2::after,.tooltip-3::after{
@@ -1479,17 +1737,17 @@ img{
 
 .tooltip-1-hover{
     top: -234px;
-    left: 17.2%;
+    left: 18.2%;
 }
 
 .tooltip-2-hover{
     top: -186px;
-    left: 59.15%;
+    left: 62.8%;
 }
 
 .tooltip-3-hover{
     top: -185px;
-    left: 26.4%;
+    left: 28%;
 }
 
 .tooltip-1-hover::before,.tooltip-2-hover::before,.tooltip-3-hover::before{
