@@ -28,25 +28,23 @@
 				<h1 class="caption-hidden">Blanchard | Художественная галерея</h1>
 				<nav class="menu-list">
 					<ul class="list-reset menu-list menu-list-nav-menu">
-						<li class="menu-list-item"><a href="#abbout" class="menu-list-item-link">О нас</a></li>
-						<li class="menu-list-item"><a href="#gallery" class="menu-list-item-link">Галерея</a></li>
-						<li class="menu-list-item"><a href="#catalog" class="menu-list-item-link">Каталог</a></li>
-						<li class="menu-list-item"><a href="#event" class="menu-list-item-link">События</a></li>
-						<li class="menu-list-item"><a href="#publications" class="menu-list-item-link">Издания</a></li>
-						<li class="menu-list-item"><a href="#project" class="menu-list-item-link">Проекты</a></li>
-						<li class="menu-list-item"><a href="#contacts" class="menu-list-item-link">Контакты</a></li>
+						<li class="menu-list-nav-menu-item"><a href="#about" class="menu-list-nav-menu-item-link">О нас</a></li>
+						<li class="menu-list-nav-menu-item"><a href="#gallery" class="menu-list-nav-menu-item-link">Галерея</a></li>
+						<li class="menu-list-nav-menu-item"><a href="#catalog" class="menu-list-nav-menu-item-link">Каталог</a></li>
+						<li class="menu-list-nav-menu-item"><a href="#event" class="menu-list-nav-menu-item-link">События</a></li>
+						<li class="menu-list-nav-menu-item"><a href="#publications" class="menu-list-nav-menu-item-link">Издания</a></li>
+						<li class="menu-list-nav-menu-item"><a href="#project" class="menu-list-nav-menu-item-link">Проекты</a></li>
+						<li class="menu-list-nav-menu-item"><a href="#contacts" class="menu-list-nav-menu-item-link">Контакты</a></li>
 					</ul>
 					<button type="button" class="btn sign-in-btn">Войти</button>
 				</nav>
 			</div>
 		</div>
-		<div class="section-filter">
-			<div class="container section-filter-position">
+		<div class="under-menu">
+			<div class="container under-menu-position">
 				<ul class="list-reset list-under-menu">
 					<li class="list-under-menu-item">
-						<div>
 						<button class="btn under-menu-btn" data-path="realizm">Реализм</button>
-						</div>
 						<div class="droppaun" data-target="realizm" id="droppaun">
 							<ul class="list-reset container-drop" data-simplebar>
 								<li class="drop-item"><button class="btn drop-item-link drop-1-1">Тинторетто</button></li>
@@ -131,35 +129,18 @@
 				</div>
 				<!-- <div class="swiper-pagination"></div> -->
 			</div>
-			<div class="container">
-				<div class="slider-text-position">
+			<div class="container slider-text-position">
+				<div class="slider-text-size">
 					<h2 class="slide-caption">Прикоснитесь к прекрасному</h2>
 					<p class="slide-text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
 					<button class="btn slide-button" type="button">Подписаться на рассылку</button>
 				</div>
 			</div>
-			<script>
-				var mySwiper = new Swiper('.first-slider', {
-					direction: 'horizontal',
-					slidesPerView: 1,
-					loop: true,
-					// spaceBetween: 200,
-	
-					pagination: {
-						el: '.swiper-pagination',
-						clickable: true,
-					},
-	
-					autoplay: {
-						delay: 4500,
-					},
-				})
-			</script>
 		</section>
-        <section class="section-abbout" id="abbout">
+        <section class="section-about" id="about">
             <div class="container">
                 <h2 class="main-caption">О нас</h2>
-                <p class="abboit-text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+                <p class="about-text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
             </div>
         </section>
         <section class="section-gallery" id="gallery">
@@ -175,7 +156,7 @@
                             </select>
                     </form>
                     <div class="gallery-filter-text-position">
-                        <p class="gallery-text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией. </p>
+                        <p class="gallery-text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="gallery-text-link" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией. </p>
                     </div>
                 </div>
                 <div class="gallery-preview">
@@ -244,23 +225,6 @@
                 </div>
             </div>
         </section>
-        <script>
-            var swiper = new Swiper('.second-slider', {
-                slidesPerView: 3,
-                slidesPerColumn: 2,
-                spaceBetween: 50,
-                
-                pagination: {
-                    el: '.pagination2',
-                    type: 'fraction',
-                },
-
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-        </script>
         <section class="section-catalog" id="catalog">
             <div class="container">
                 <div class="tabs-position">
@@ -774,15 +738,6 @@
                     </div>
                 </div>
             </div>
-            <script>
-                $(function() {
-                    $( ".accordion" ).accordion({
-                        active: false,
-                        collapsible: true,
-                        heightStyle: "content",
-                    } );
-                });
-            </script>   
         </section>
         <section class="section-events" id="event">
             <div class="container">
@@ -1028,22 +983,6 @@
                       </div>
                 </div>
             </div>
-        <script>
-            var swiper = new Swiper('.three-slider', {
-                slidesPerView: 3,
-                spaceBetween: 50,
-                
-                pagination: {
-                    el: '.pagination2',
-                    type: 'fraction',
-                },
-
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-        </script>
         </section>
         <section class="section-project" id="project">
             <div class="container">
@@ -1084,27 +1023,6 @@
                     <div class="swiper-button-next-project"></div>
                 </div>
                 </div>
-                <script>
-                    var mySwiper = new Swiper('.four-slider-container', {
-                        direction: 'horizontal',
-                        slidesPerView: 3,
-                        spaceBetween: 50,
-    
-                        pagination: {
-                            el: '.swiper-pagination',
-                            clickable: true,
-                        },
-
-                        navigation: {
-                            nextEl: '.swiper-button-next-project',
-                            prevEl: '.swiper-button-prev-project',
-                        },
-    
-                        // autoplay: {
-                        //     delay: 4500,
-                        // },
-                    })
-                </script>
         </section>
         <section class="section-contacts" id="contacts">
             <div class="container">
@@ -1156,5 +1074,6 @@
     <script src="js/map.js"></script>
     <script src="js/droppaun.js"></script>
     <script src="js/animate.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
