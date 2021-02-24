@@ -81,10 +81,9 @@ img{
     color: #ffffff;
 }
 
-/* .header{
-    padding-top: 30px;
-    padding-bottom: 30px;
-} */
+.header{
+    margin-bottom: 71px;
+}
 
 .header-position{
     display: flex;
@@ -174,7 +173,8 @@ img{
 .first-slider{
     width: 100%;
     height: 700px;
-    top: -70px;
+    top: 100px;
+    position: absolute;
 }
 
 .first-slider-1{
@@ -192,15 +192,13 @@ img{
     background-size: cover;
 }
 
-.slider-text-position{
-    position: absolute;
-    z-index: 1;
-    top: 242px;
-    left: 0;
-    right: 0;
+.slider-text{
+    margin-bottom: 193px;
 }
 
-.slider-text-size{
+.slider-text-position{
+    position: relative;
+    z-index: 2;
     width: 605px;
 }
 
@@ -274,7 +272,7 @@ img{
     background-color: unset;
     padding-right: 23px;
     position: relative;
-    background: url('../img/under-menu-arrow.svg') 94% 56% no-repeat;
+    background: url('../img/under-menu-arrow.svg') 100% 56% no-repeat;
     background-size: 14px 14px;
     transition-property: color,background;
     transition-duration: .2s;
@@ -992,7 +990,7 @@ img{
 }
 
 .catalog-caption{
-    margin-right: 49px;
+    margin-right: 41px;
 }
 
 .tabs-position{
@@ -1689,17 +1687,17 @@ img{
 }
 
 .tooltip-1{
-    top: -152px;
+    top: -169px;
     left: 292px;
 }
 
 .tooltip-2{
-    top: -120px;
+    top: -137px;
     right: 580px;
 }
 
 .tooltip-3{
-    top: -87px;
+    top: -105px;
     left: 448px;
 }
 
@@ -1734,17 +1732,17 @@ img{
 }
 
 .tooltip-1-hover{
-    top: -234px;
+    top: -254px;
     left: 18.2%;
 }
 
 .tooltip-2-hover{
-    top: -186px;
+    top: -206px;
     left: 62.8%;
 }
 
 .tooltip-3-hover{
-    top: -185px;
+    top: -205px;
     left: 28%;
 }
 

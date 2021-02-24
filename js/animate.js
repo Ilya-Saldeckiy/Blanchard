@@ -10,4 +10,9 @@ $(document).ready(function(){
             scrollTop: $(".section-contacts").offset().top 
         }, 1000);
     });
+    $(".first-slide-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#footer").offset().top 
+        }, 1500);
+    });
 });
