@@ -77,8 +77,9 @@ img{
 
 /* Стили шапки */
 
-.menu-list{
+.menu-nav{
     color: #ffffff;
+    display: flex;
 }
 
 .header{
@@ -101,10 +102,6 @@ img{
     margin-right: 179px;
 }
 
-.menu-list{
-    display: flex;
-}
-
 .menu-list-nav-menu{
     margin-right: 278px;
     padding-top: 3px;
@@ -115,29 +112,29 @@ img{
     margin-right: 0;
 }
 
-.menu-list-nav-menu-item:not(:last-child){
+.menu-nav__item:not(:last-child){
     margin-right: 63px;
 }
 
-.menu-list-nav-menu-item-link{
+.menu-nav__link{
    color: #ffffff;
 }
 
-.menu-list-nav-menu-item{
+.menu-nav__item{
     font-size: 18px;
     font-weight: 600;
     transition: color 0.2s ease-in-out;
 }
 
-.menu-list-nav-menu-item-link:hover{
+.menu-nav__link:hover{
     color: #C283F3;
 }
 
-.menu-list-nav-menu-item-link:active{
+.menu-nav__link:active{
     color: #7943A4;
 }
 
-.menu-list-nav-menu-item-link:focus,.sign-in-btn:focus,.search-input:focus,.search-button:focus{
+.menu-nav__link:focus,.sign-in-btn:focus,.search-input:focus,.search-button:focus{
     color: #ffffff;
     outline: 1px solid #7943A4;
 }
@@ -196,13 +193,13 @@ img{
     margin-bottom: 193px;
 }
 
-.slider-text-position{
+.slider-text__position{
     position: relative;
     z-index: 2;
     width: 605px;
 }
 
-.slide-caption{
+.slider-text__caption{
     font-size: 72px;
     font-weight: 700;
     line-height: 82px;
@@ -211,15 +208,16 @@ img{
     margin-bottom: 20px;
 }
 
-.slide-text{
+.slider-text__description{
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
     color: #ffffff;
+    margin-top: 0;
     margin-bottom: 92px;
 }
 
-.slide-button{
+.slider-text__btn{
     width: 314px;
     height: 70px;
     border: 3px solid #9D5CD0;
@@ -234,11 +232,11 @@ img{
     transition-timing-function: ease;
 }
 
-.slide-button:hover{
+.slider-text__btn:hover{
     border: 3px solid #D1A9F0;
 }
 
-.slide-button:active{
+.slider-text__btn:active{
     background-color: #7943A4;
     border: 3px solid #D1A9F0;
 }
@@ -256,16 +254,16 @@ img{
     padding-bottom: 19px;
 }
 
-.list-under-menu{
+.under-menu__list{
     display: flex;
     margin-right: auto;
 }
 
-.list-under-menu-item:not(:last-child){
+.under-menu__item:not(:last-child){
     margin-right: 82px;
 }
 
-.under-menu-btn{
+.under-menu__btn{
     font-size: 18px;
     font-weight: 400;
     color: #ffffff;
@@ -279,19 +277,19 @@ img{
     transition-timing-function: ease-in-out;
 }
 
-.under-menu-btn:hover{
+.under-menu__btn:hover{
     color: #9D5CD0;
     background: url('../img/under-btn-arrow-hover.svg') 100% 50% no-repeat;
     background-size: 14px 14px;
 }
 
-.under-menu-btn:active{
+.under-menu__btn:active{
     color: #7943A4;
     background: url('../img/under-menu-active-btn.svg') 100% 100% no-repeat;
     background-size: 14px 14px;
 }
 
-.under-menu-btn:active{
+.under-menu__btn:active{
     color: #7943A4;
 }
 
@@ -393,7 +391,7 @@ img{
     border-radius: 5px;
 }
 
-.droppaun{
+.dropdown{
     width: 300px;
     max-height: 300px;
     padding-top: 40px;
@@ -411,18 +409,18 @@ img{
     display: block;
 }
 
-.container-drop{
+.dropdown__list{
     margin: 0 auto;
     width: 240px;
     max-height: 220px;
     overflow: auto;
 }
 
-.drop-item:not(:last-child){
+.dropdown__item:not(:last-child){
     margin-bottom: 20px;
 }
 
-.drop-item-link{
+.dropdown__btn{
     width: 220px;
     height: 40px;
     text-align: left;
@@ -623,7 +621,7 @@ img{
     background-size: cover;
 }
 
-.gallery-caption{
+.gallery__caption{
     color: #ffffff;
     margin-bottom: 24px
 }
@@ -634,14 +632,14 @@ img{
 
 .gallery-filter{
     width: 401px;
-    margin-right: 50px;
+    margin-right: auto;
 }
 
-.gallery-form{
+.gallery-filter__form{
     margin-bottom: 555px;
 }
 
-.form-gallery-label{
+.gallery-filter__label{
     font-weight: 600;
     color: #ffffff;
     position: relative;
@@ -650,7 +648,7 @@ img{
 
 
 
-.gallery-text{
+.gallery-filter__text{
     color: #ffffff;
     font-weight: 600;
     margin: 0;
@@ -764,10 +762,11 @@ img{
 
 .swiper-pagination-fraction{
     top: 24px;
-    left: -508px;
+    left: 41px;
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
+    max-width: 50px;
 }
 
 
@@ -962,19 +961,19 @@ img{
     transition: opacity 0.3s ease-in-out;
 }
 
-.gallery-filter-text-position .gallery-text-link{
+.gallery-filter__text-position .gallery-filter__link{
     color: #C283F3;
     transition-property: border,color;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
 }
 
-.gallery-filter-text-position .gallery-text-link:hover{
+.gallery-filter__text-position .gallery-filter__link:hover{
     color: #9D5CD0;
     border-bottom: 1px solid #9D5CD0;
 }
 
-.gallery-filter-text-position .gallery-text-link:active{
+.gallery-filter__text-position .gallery-filter__link:active{
     color: #7943A4;
     border-bottom: 1px solid #7943A4;
 }
@@ -985,7 +984,7 @@ img{
     padding-bottom: 80px;
 }
 
-.catalog-countries{
+.catalog-countries__list{
     display: flex;
 }
 
@@ -1029,27 +1028,27 @@ img{
     top: -10px;
 }
 
-.countries-btn-fra{
+.countries-btn__fra{
     background: url('../img/france.png') 50% no-repeat;
 }
 
-.countries-btn-germ{
+.countries-btn__germ{
     background: url('../img/germani.png') 50% no-repeat;
 }
 
-.countries-btn-italy{
+.countries-btn__italy{
     background: url('../img/italy.png') 50% no-repeat;
 }
 
-.countries-btn-rus{
+.countries-btn__rus{
     background: url('../img/russia.png') 50% no-repeat;
 }
 
-.countries-btn-belg{
+.countries-btn__belg{
     background: url('../img/belgia.png') 50% no-repeat;
 }
 
-.catalog-countries-item:not(:last-child){
+.catalog-countries__item:not(:last-child){
     margin-right: 50px;
 }
 
@@ -1106,6 +1105,10 @@ img{
     color: #999999;
     margin-bottom: 7px;
     margin-top: 0;
+}
+
+.germani-biographi-state,.france-biographi-state,.italy-biographi-state,.russia-biographi-state,.belgia-biographi-state{
+    display: none;
 }
 
 .biography-description{
@@ -1177,7 +1180,7 @@ img{
 }
 
 
-.list-artists-links-profile{
+.artists__list{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1186,11 +1189,11 @@ img{
     padding: 0;
 }
 
-.list-artists-links-profile li{
+.artists__list li{
     width: 308px;
 }
 
-.artists-btn{
+.artists__btn{
     background-color: unset;
     color: #333;
     font-size: 16px;
@@ -1198,14 +1201,14 @@ img{
     margin-bottom: 0px;
 }
 
-.artists-btn:hover{
+.artists__btn:hover{
     color: #9D5CD0;
     padding-bottom: 0px;
     margin-bottom: 0px;
     border-bottom: 1px solid #9D5CD0;
 }
 
-.artists-btn:active{
+.artists__btn:active{
     color: #7943A4;
     border-bottom: none;
 }
@@ -1945,11 +1948,11 @@ img{
     margin-bottom: 13px;
 }
 
-.social-list{
+.social__list{
     display: flex;
 }
 
-.social-link{
+.social__link{
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -1957,7 +1960,7 @@ img{
     transition: transform 0.2s ease-in-out;
 }
 
-.social-link:hover{
+.social__link:hover{
     transform: scale(1.2);
 }
 
@@ -1971,7 +1974,7 @@ img{
     background-color: #2AABEE;
 }
 
-.social-list-item:not(:last-child){
+.social__item:not(:last-child){
     margin-right: 20px;
 }
 
@@ -2003,15 +2006,15 @@ img{
     background-color: #000000;
 }
 
-.footer-social-list{
+.footer-social__list{
     display: flex;
 }
 
-.footer-social-list-item:not(:last-child){
+.footer-social__item:not(:last-child){
     margin-right: 20px;
 }
 
-.footer-social-link{
+.footer-social__link{
     width: 45px;
     height: 45px;
     border-radius: 100%;
