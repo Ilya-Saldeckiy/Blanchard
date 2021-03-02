@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     $('.tabs-btn').click(function(){
-        $(this).toggleClass('open');
+        $(this).addClass('open');
         $('.tabs-btn').not(this).removeClass('open');
     })
 

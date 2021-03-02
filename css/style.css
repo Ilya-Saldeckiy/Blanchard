@@ -1129,6 +1129,9 @@ img{
     position: relative;
     outline: none;
     cursor: pointer;
+    transition-property: color,border-top,border-bottom,background-color;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
 }
 
 .list-artists-link:hover{
@@ -1144,6 +1147,13 @@ img{
     background-size: 23px;
     background-color: #9D5CD0;
 }
+
+.ui-state-active{
+    transition-property: color,border-top,border-bottom,background-color;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+}
+
 .ui-state-active,.ui-state-active:hover{
     color: #7943A4;
     border-top: 1px solid #7943A4;
@@ -1199,6 +1209,10 @@ img{
     font-size: 16px;
     line-height: 32px;
     margin-bottom: 0px;
+    border-bottom: 1px solid #fff;
+    transition-property: color,border-bottom;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
 }
 
 .artists__btn:hover{
@@ -1233,7 +1247,8 @@ img{
 }
 
 .active-btn{
-    color: #7943A4;
+    color: #9D5CD0;
+    font-weight: 600;
 }
 
 
