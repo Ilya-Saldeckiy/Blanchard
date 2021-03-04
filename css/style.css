@@ -1120,6 +1120,7 @@ img{
 .list-artists-link{
     margin: 0;
     border-top: 1px solid #CACACA;
+    border-bottom: 0.1px solid transparent;
     padding-top: 39px;
     padding-bottom: 42px;
     font-weight: 600;
@@ -1130,7 +1131,7 @@ img{
     outline: none;
     cursor: pointer;
     transition-property: color,border-top,border-bottom,background-color;
-    transition-duration: .1s;
+    transition-duration: .2s;
     transition-timing-function: ease-in-out;
 }
 
@@ -1187,6 +1188,9 @@ img{
     background-repeat: no-repeat;
     background-position: 55% 45%;
     background-size: 23px;
+    transition-property: color,border-top,border-bottom,background-color;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
 }
 
 
@@ -1211,20 +1215,21 @@ img{
     margin-bottom: 0px;
     border-bottom: 1px solid #fff;
     transition-property: color,border-bottom;
-    transition-duration: .1s;
+    transition-duration: .2s;
     transition-timing-function: ease-in-out;
+    border-bottom: 1px solid transparent;
 }
 
 .artists__btn:hover{
     color: #9D5CD0;
-    padding-bottom: 0px;
     margin-bottom: 0px;
     border-bottom: 1px solid #9D5CD0;
 }
 
 .artists__btn:active{
     color: #7943A4;
-    border-bottom: none;
+    margin: 0px;
+    border-bottom: 1px solid transparent;
 }
 
 .ui-accordion-content{
@@ -1257,27 +1262,39 @@ img{
     padding-bottom: 64px;
 }
 
-.position-card-events{
+.events__list{
     display: flex;
     flex-wrap: wrap;
 }
 
-.card-event{
+.event__item{
     width: 500px;
     min-height: 700px;
-    padding-top: 300px;
+    /* padding-top: 300px;
     background: url('../img/events-1.png') 100% 0% no-repeat;
-    background-size: 500px 300px;
+    background-size: 500px 300px; */
     margin-right: 50px;
     margin-bottom: 50px;
 }
 
-.card-event:nth-child(3n){
+.event__image{
+    margin-bottom: -13px;
+}
+
+.event__item:nth-child(3n){
     margin-right: 0px;
 }
 
-.card-event:nth-child(6n){
+.event__item:nth-child(6n){
     margin-bottom: 0px;
+}
+
+.event__item:nth-last-child(-n+2){
+   display: none;
+}
+
+.event-active .event__item:nth-last-child(-n+2){
+    display: block;
 }
 
 .text-position-event{
@@ -1320,7 +1337,7 @@ img{
     margin-bottom: 82px;
 }
 
-.card-event a{
+.event__item a{
     border-bottom: 1px solid #9D5CD0;
     color: #9D5CD0;
     padding-bottom: 5px;
@@ -1354,8 +1371,10 @@ img{
     display: none;
 }
 
-.event-active{
-    display: block;
+.card-events-link{
+    transition-property: color,border-bottom,font-weight;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
 }
 
 .card-events-link:hover{

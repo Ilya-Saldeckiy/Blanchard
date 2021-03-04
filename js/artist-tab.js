@@ -15,10 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const path = event.currentTarget.dataset.path
             console.log(path)
 
-            document.querySelectorAll('.france-biographi-state').forEach(function(tabContent) {
-                tabContent.classList.remove('open-biograph')
-            })
-            document.querySelector(`[data-target='${path}']`).classList.add('open-biograph')
+            if (path !== undefined){
+
+                document.querySelectorAll('.france-biographi-state').forEach(function(tabContent) {
+                    tabContent.classList.remove('open-biograph')
+                })
+                
+                document.querySelector(`[data-target='${path}']`).classList.add('open-biograph')
+
+            }
         })
     })
 
@@ -27,10 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const path = event.currentTarget.dataset.path
             console.log(path)
 
-            document.querySelectorAll('.germani-biographi-state').forEach(function(tabContent) {
-                tabContent.classList.remove('open-biograph')
-            })
-            document.querySelector(`[data-target='${path}']`).classList.add('open-biograph')
+            if (path !== undefined){
+
+                document.querySelectorAll('.germani-biographi-state').forEach(function(tabContent) {
+                    tabContent.classList.remove('open-biograph')
+                })
+                document.querySelector(`[data-target='${path}']`).classList.add('open-biograph')
+
+            }
         })
     })
 
@@ -39,10 +48,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const path = event.currentTarget.dataset.path
             console.log(path)
 
-            document.querySelectorAll('.italy-biographi-state').forEach(function(tabContent) {
-                tabContent.classList.remove('open-biograph')
-            })
-            document.querySelector(`[data-target='${path}']`).classList.add('open-biograph')
+            if (path !== undefined){
+
+                document.querySelectorAll('.italy-biographi-state').forEach(function(tabContent) {
+                    tabContent.classList.remove('open-biograph')
+                })
+                document.querySelector(`[data-target='${path}']`).classList.add('open-biograph')
+
+            }
         })
     })
 
@@ -51,10 +64,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const path = event.currentTarget.dataset.path
             console.log(path)
 
-            document.querySelectorAll('.russia-biographi-state').forEach(function(tabContent) {
-                tabContent.classList.remove('open-biograph')
-            })
-            document.querySelector(`[data-target='${path}']`).classList.add('open-biograph')
+            if (path !== undefined){
+
+                document.querySelectorAll('.russia-biographi-state').forEach(function(tabContent) {
+                    tabContent.classList.remove('open-biograph')
+                })
+                document.querySelector(`[data-target='${path}']`).classList.add('open-biograph')
+
+            }
         })
     })
 
@@ -63,40 +80,60 @@ document.addEventListener('DOMContentLoaded', function() {
             const path = event.currentTarget.dataset.path
             console.log(path)
 
-            document.querySelectorAll('.belgia-biographi-state').forEach(function(tabContent) {
-                tabContent.classList.remove('open-biograph')
-            })
-            document.querySelector(`[data-target='${path}']`).classList.add('open-biograph')
+            if (path !== undefined){
+
+                document.querySelectorAll('.belgia-biographi-state').forEach(function(tabContent) {
+                    tabContent.classList.remove('open-biograph')
+                })
+                document.querySelector(`[data-target='${path}']`).classList.add('open-biograph')
+            
+            }
         })
     })
 
     $('.tabs-btn').click(function(){
+        const path = event.currentTarget.dataset.path
         $(this).addClass('open');
         $('.tabs-btn').not(this).removeClass('open');
     })
 
     $('.france-artists__btn').click(function(){
-        $(this).toggleClass('active-btn');
-        $('.france-artists__btn').not(this).removeClass('active-btn');
+        const path = event.currentTarget.dataset.path
+        if (path !== undefined){
+            $(this).toggleClass('active-btn');
+            $('.france-artists__btn').not(this).removeClass('active-btn');
+        }
     })
 
     $('.germani-artists__btn').click(function(){
-        $(this).toggleClass('active-btn');
-        $('.germani-artists__btn').not(this).removeClass('active-btn');
+        const path = event.currentTarget.dataset.path
+        if (path !== undefined){
+            $(this).toggleClass('active-btn');
+            $('.germani-artists__btn').not(this).removeClass('active-btn');
+        }
     })
 
     $('.italy-artists__btn').click(function(){
-        $(this).toggleClass('active-btn');
-        $('.italy-artists__btn').not(this).removeClass('active-btn');
+        const path = event.currentTarget.dataset.path
+        if (path !== undefined){
+            $(this).toggleClass('active-btn');
+            $('.italy-artists__btn').not(this).removeClass('active-btn');
+        }
     })
 
     $('.russia-artists__btn').click(function(){
-        $(this).toggleClass('active-btn');
-        $('.russia-artists__btn').not(this).removeClass('active-btn');
+        const path = event.currentTarget.dataset.path
+        if (path !== undefined){
+            $(this).toggleClass('active-btn');
+            $('.russia-artists__btn').not(this).removeClass('active-btn');
+        }
     })
 
     $('.belgia-artists__btn').click(function(){
-        $(this).toggleClass('active-btn');
-        $('.belgia-artists__btn').not(this).removeClass('active-btn');
+        const path = event.currentTarget.dataset.path
+        if (path !== undefined){
+            $(this).toggleClass('active-btn');
+            $('.belgia-artists__btn').not(this).removeClass('active-btn');
+        }
     })
 })
