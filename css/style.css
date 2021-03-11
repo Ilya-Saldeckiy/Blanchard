@@ -742,6 +742,7 @@ img{
     width: 350px;
     height: 350px;
     position: relative;
+    object-fit: cover
 }
 
 .second-slider {
@@ -1617,12 +1618,16 @@ img{
     color: #C283F3;
 }
 
-.checkbox:active + .checkbox-span {
+.checkbox:hover + .checkbox-span {
     color: #C283F3;
 }
 
-.checkbox:hover + .checkbox-span {
-    color: #C283F3;
+.checkbox:hover + .checkbox-span::before{
+    border: 1px solid #C283F3;
+}
+
+.checkbox:hover + .checkbox-span::after{
+    opacity: 1;
 }
 
 .checkbox:focus + .checkbox-span {
@@ -1635,6 +1640,23 @@ img{
   
 .checkbox:checked + .checkbox-span::after {
     opacity: 1;
+}
+
+.checkbox:checked + .checkbox-span::before {
+    border: 1px solid #C283F3;
+}
+
+.checkbox:active + .checkbox-span {
+    color: #7943A4;
+    outline: none;
+}
+
+.checkbox:active + .checkbox-span::after{
+    opacity: 0;
+}
+
+.checkbox:active + .checkbox-span::before{
+    border: 1px solid #7943A4;
 }
 
 .price-filter-position{
@@ -1899,105 +1921,106 @@ img{
     transition-property:background,background-size;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
+    box-sizing: border-box;
 }
 
 .slide-partners__1{
     background: url('../img/parthners-1.png') 50% 50% no-repeat;
-    background-size: 263px 63px;
+    background-size: 50%;
     cursor: pointer;
 }
 
 .slide-partners__1:hover{
     background: url('../img/partners-1.png') 50% 50% no-repeat;
-    background-size: auto;
+    background-size: 60%;
 }
 
 .slide-partners__2{
     background: url('../img/parthners-2.png') 50% 50% no-repeat;
-    background-size: 263px 63px;
+    background-size: 50%;
     cursor: pointer;
 }
 
 .slide-partners__2:hover{
     background: url('../img/partners-2.png') 50% 50% no-repeat;
-    background-size: auto;
+    background-size: 60%;
 }
 
 .slide-partners__3{
     background: url('../img/parthners-3.png') 50% 50% no-repeat;
-    background-size: 263px 63px;
+    background-size: 50%;
     cursor: pointer;
 }
 
 .slide-partners__3:hover{
     background: url('../img/partners-3.png') 50% 50% no-repeat;
-    background-size: auto;
+    background-size: 60%;
 }
 
 .slide-partners__4{
     background: url('../img/parthners-4.png') 50% 50% no-repeat;
-    background-size: 263px 63px;
+    background-size: 25%;
     cursor: pointer;
 }
 
 .slide-partners__4:hover{
     background: url('../img/partners-4.png') 50% 50% no-repeat;
-    background-size: auto;
+    background-size: 30%;
 }
 
 .slide-partners__5{
     background: url('../img/parthners-5.png') 50% 50% no-repeat;
-    background-size: 263px 63px;
+    background-size: 30%;
     cursor: pointer;
 }
 
 .slide-partners__5:hover{
     background: url('../img/partners-7.png') 50% 50% no-repeat;
-    background-size: auto;
+    background-size: 35%;
 }
 
 .slide-partners__6{
     background: url('../img/parthners-6.png') 50% 50% no-repeat;
-    background-size: 263px 63px;
+    background-size: 40%;
     cursor: pointer;
 }
 
 .slide-partners__6:hover{
     background: url('../img/partners-5.png') 50% 50% no-repeat;
-    background-size: auto;
+    background-size: 45%;
 }
 
 .slide-partners__7{
     background: url('../img/parthners-7.png') 50% 50% no-repeat;
-    background-size: 263px 63px;
+    background-size: 40%;
     cursor: pointer;
 }
 
 .slide-partners__7:hover{
     background: url('../img/partners-8.png') 50% 50% no-repeat;
-    background-size: auto;
+    background-size: 45%;
 }
 
 .slide-partners__8{
     background: url('../img/parthners-8.png') 50% 50% no-repeat;
-    background-size: 263px 63px;
+    background-size: 30%;
     cursor: pointer;
 }
 
 .slide-partners__8:hover{
     background: url('../img/partners-6.png') 50% 50% no-repeat;
-    background-size: auto;
+    background-size: 35%;
 }
 
 .slide-partners__9{
     background: url('../img/parthners-9.png') 50% 50% no-repeat;
-    background-size: 263px 63px;
+    background-size: 30%;
     cursor: pointer;
 }
 
 .slide-partners__9:hover{
     background: url('../img/partners-9.png') 50% 50% no-repeat;
-    background-size: auto;
+    background-size: 35%;
 }
 
 
@@ -2025,7 +2048,7 @@ img{
     height: 15px;
     display: block;
     position: absolute;
-    top: 5px;
+    top: 6px;
     left: 8px;
     background: url('../img/arrow-slider.svg') 50% no-repeat;
     z-index: 6;
@@ -2038,7 +2061,7 @@ img{
     height: 15px;
     display: block;
     position: absolute;
-    top: 5px;
+    top: 6px;
     left: 8px;
     background: url('../img/arrow-slider.svg') 50% no-repeat;
     z-index: 6;
