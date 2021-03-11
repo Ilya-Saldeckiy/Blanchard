@@ -1262,6 +1262,7 @@ img{
     width: 750px;
     height: 470px;
     margin-bottom: 20px;
+    object-fit:cover;
 }
 
 .biographi-state{
