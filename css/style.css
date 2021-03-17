@@ -2031,17 +2031,13 @@ img{
 #map{
     width: 1240px;
     height: 700px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 [class*="ground-pane"]{
     filter: grayscale(1);
-}
-
-
-.map-position{
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
 .contacts-input{
@@ -2125,6 +2121,7 @@ img{
 .social-caption{
     font-size: 24px;
     line-height: 32px;
+    font-weight: 400;
     color: #333;
     margin: 0;
     margin-bottom: 13px;
