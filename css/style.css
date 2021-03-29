@@ -628,6 +628,7 @@ img{
 
 .gallery-position{
     display: flex;
+    position: relative;
 }
 
 .gallery-filter{
@@ -977,6 +978,103 @@ img{
 .gallery-filter__text-position .gallery-filter__link:active{
     color: #7943A4;
     border-bottom: 1px solid #7943A4;
+}
+
+
+.gellary__modal{
+    position: absolute;
+    left: 0px;
+    right: 0;
+    top: 175px;
+    bottom: 0;
+    z-index: 100001;
+    height: 500px;
+    width: 900px;
+    background-color: #fff;
+    display: flex;
+    margin: 0 auto;
+    display: none;
+}
+
+.modal__img{
+    max-width: 400px;
+    height: 100%;
+}
+
+.modal__img-position{
+    width: 400px;
+    margin-right: 48px
+}
+
+.modal__text-position{
+    width: 401px;
+    padding-top: 121px;
+}
+
+.modal__caption{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.modal__subtitle{
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.modal__date{
+    font-size: 12px;
+    line-height: 16px;
+    color: #969696;
+    margin: 0;
+    margin-bottom: 41px;
+}
+
+.modal__text{
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    margin: 0;
+}
+
+.modal__btn{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: url('../img/cansel-modal.svg') no-repeat;
+    background-color: unset;
+}
+
+.modal__fade::after{
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 765vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+
+.fade-active{
+    display: block;
+}
+
+.scroll-hidden{
+    overflow: hidden;
+}
+
+.modal__active{
+    display: flex;
 }
 
 
