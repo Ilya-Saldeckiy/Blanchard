@@ -1656,10 +1656,12 @@
             <div class="form-contacts">
                 <h3 class="form-contacts-caption">Шоурум №4</h3>
                 <p class="form-contacts-adress">Леонтьевский переулок, дом 5, строение 1</p>
-                <form action="send.php" method="post">
+                <form action="js/mail.php" enctype="multipart/form-data" class="form" method="POST" id="form">
+                    <input type="hidden" name="admin_email[]" value="melllllowtoy@yandex.ru">
+		            <input type="hidden" name="form_subject" value="Тема письма">
                     <span class="form-contacts-legend">Заказать обратный звонок</span>
                     <input class="contacts-input" type="text" placeholder="Имя*" name="name" required>
-                    <input class="contacts-input" type="text" placeholder="Телефон*" name="tel" required>
+                    <input class="contacts-input" placeholder="Телефон*" data-validate-field="tel" name="tel" required>
                     <button class="btn contact-form-btn" type="submit" name="submit">Заказать</button>
                 </form>
                 <h3 class="social-caption">Связаться в один клик</h3>
@@ -1699,6 +1701,10 @@
     <script src="js/main.js" defer></script>
     <script src="js/modal.js"></script>
     <script src="js/send.php"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/just-validate.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

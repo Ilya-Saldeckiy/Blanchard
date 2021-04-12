@@ -1,22 +1,19 @@
-<?php
-
-if(isset($_POST['submit'])){
-$to = "melllllowtoy@yandex.ru";; // Здесь нужно написать e-mail, куда будут приходить письма
-$from = $_POST['email']; // this is the sender's Email address
-$first_name = $_POST['name'];
-$subject = "Форма отправки сообщений с сайта";
-$subject2 = "Copy of your form submission";
-$message = $first_name . " оставил сообщение:" . "\n\n" . $_POST['message'];
-$message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
-
-$headers = "From:" . $from;
-$headers2 = "From:" . $to;
-
-mail($to,$subject,$message,$headers);
-// mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender - Отключено!
-echo "Сообщение отправлено. Спасибо Вам " . $first_name . ", мы скоро свяжемся с Вами.";
-echo "<br /><br /><a href='https://epicblog.net'>Вернуться на сайт.</a>";
-
+<?
+if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['tel'])&&$_POST['tel']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
+        $to = 'melllllowtoy@yandex.ru'; //Почта получателя, через запятую можно указать сколько угодно адресов
+        $subject = 'Обратный звонок'; //Загаловок сообщения
+        $message = '
+                <html>
+                    <head>
+                        <title>'.$subject.'</title>
+                    </head>
+                    <body>
+                        <p>Имя: '.$_POST['name'].'</p>
+                        <p>Телефон: '.$_POST['tel'].'</p>                        
+                    </body>
+                </html>'; //Текст нащего сообщения можно использовать HTML теги
+        $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
+        $headers .= "From: Отправитель <from@example.com>\r\n"; //Наименование и почта отправителя
+        mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
 }
-
 ?>

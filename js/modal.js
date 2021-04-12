@@ -21,20 +21,6 @@ document.querySelectorAll('.gallery-slide').forEach(function(modal){
             }
         })
 
-        document.querySelectorAll('.modal__fade').forEach(function(fade){
-            fade.addEventListener('click', function(event){
-                if (document.querySelector('gellary__modal').classList.contains('modal__active')) {
-                closeModal();
-            }
-            })
-        })
-
-        document.querySelector('modal__fade').addEventListener('click', (event) => {
-            if (document.querySelector('gellary__modal').classList.contains('modal__active')) {
-                closeModal();
-            }
-        })
-
         document.querySelectorAll('.modal__btn').forEach(function(btn){
             btn.addEventListener('click', function(event){
                 document.querySelector(`[data-target='${path}']`).classList.remove('modal__active')

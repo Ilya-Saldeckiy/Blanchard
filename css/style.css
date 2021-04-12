@@ -64,6 +64,10 @@ img{
     cursor: pointer;
 }
 
+/* .hidden{
+
+} */
+
 .caption-hidden{
    position: absolute !important;
    clip: rect(1px 1px 1px 1px);
@@ -982,10 +986,10 @@ img{
 
 
 .gellary__modal{
-    position: absolute;
+    position: fixed;
     left: 0px;
     right: 0;
-    top: 175px;
+    top: 50%;
     bottom: 0;
     z-index: 100001;
     height: 500px;
@@ -994,6 +998,7 @@ img{
     display: flex;
     margin: 0 auto;
     display: none;
+    transform: translateY(-50%);
 }
 
 .modal__img{
@@ -2018,9 +2023,7 @@ img{
 .four-slide{
     height: 150px;
     border: 1px solid #CACACA; 
-    /* background: url('../img/parthners-1.png') 50% 50% no-repeat; */
     background-color: #fff;
-    /* margin-right: 20px; */
     transition-property:background,background-size,filter;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
@@ -2035,8 +2038,12 @@ img{
     transition-timing-function: ease-in-out;
 }
 
-.partners-img:hover,.four-slide:hover .partners-img{
+.partners-img,.four-slide .partners-img{
     filter: contrast(110%) brightness(150%) sepia(30%) grayscale(150%);
+}
+
+.partners-img:hover,.four-slide:hover .partners-img{
+    filter: none;
 }
 
 .slide-partners__4{
@@ -2127,9 +2134,8 @@ img{
 }
 
 #map{
-    width: 1240px;
+    width: 1200px;
     height: 700px;
-    position: absolute;
     top: 0;
     right: 0;
 }
@@ -2306,6 +2312,10 @@ img{
     transition-property:transform,color,border,outline;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
+}
+
+.footer-social__link:hover{
+    transform: scale(1.2);
 }
 
 .footer-vk{
