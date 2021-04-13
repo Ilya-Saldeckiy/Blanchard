@@ -28,5 +28,12 @@ document.querySelectorAll('.gallery-slide').forEach(function(modal){
                 document.querySelector('.body').classList.remove('modal__fade')
             })
         })
+
+        window.addEventListener('click', function (e) {
+            if (!modal.contains(e.target)) {
+                closeModal();
+            }
+        });
+        
     })
 })

@@ -859,92 +859,92 @@ img{
 }
 
 .gallery-slide-1{
-    background: url('../img/second-slider-slide-1.jpg') no-repeat;
+    background: url('../img/second-slider-slide-1.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-2{
-    background: url('../img/second-slider-slide-2.jpg') no-repeat;
+    background: url('../img/second-slider-slide-2.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-3{
-    background: url('../img/second-slider-slide-3.jpg') no-repeat;
+    background: url('../img/second-slider-slide-3.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-4{
-    background: url('../img/second-slider-slide-4.jpg') no-repeat;
+    background: url('../img/second-slider-slide-4.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-5{
-    background: url('../img/second-slider-slide-5.jpg') no-repeat;
+    background: url('../img/second-slider-slide-5.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-6{
-    background: url('../img/second-slider-slide-6.jpg') no-repeat;
+    background: url('../img/second-slider-slide-6.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-7{
-    background: url('../img/second-slider-slide-7.jpg') no-repeat;
+    background: url('../img/second-slider-slide-7.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-8{
-    background: url('../img/second-slider-slide-8.jpg') no-repeat;
+    background: url('../img/second-slider-slide-8.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-9{
-    background: url('../img/second-slider-slide-9.jpg') no-repeat;
+    background: url('../img/second-slider-slide-9.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-10{
-    background: url('../img/second-slider-slide-10.jpg') no-repeat;
+    background: url('../img/second-slider-slide-10.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-11{
-    background: url('../img/second-slider-slide-11.jpg') no-repeat;
+    background: url('../img/second-slider-slide-11.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-12{
-    background: url('../img/second-slider-slide-12.jpg') no-repeat;
+    background: url('../img/second-slider-slide-12.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-13{
-    background: url('../img/second-slider-slide-13.jpg') no-repeat;
+    background: url('../img/second-slider-slide-13.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-14{
-    background: url('../img/second-slider-slide-14.jpg') no-repeat;
+    background: url('../img/second-slider-slide-14.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-15{
-    background: url('../img/second-slider-slide-15.jpg') no-repeat;
+    background: url('../img/second-slider-slide-15.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-16{
-    background: url('../img/second-slider-slide-16.jpg') no-repeat;
+    background: url('../img/second-slider-slide-16.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-17{
-    background: url('../img/second-slider-slide-17.jpg') no-repeat;
+    background: url('../img/second-slider-slide-17.jpg') 50% no-repeat;
     background-size: cover;
 }
 
 .gallery-slide-18{
-    background: url('../img/second-slider-slide-18.jpg') no-repeat;
+    background: url('../img/second-slider-slide-18.jpg') 50% no-repeat;
     background-size: cover;
 }
 
@@ -1319,12 +1319,13 @@ img{
     flex-wrap: wrap;
     max-height: 320px;
     max-width: 800px;
+    width: 100%;
     padding: 0;
 }
 
-.artists__list li{
+/* .artists__list li{
     width: 308px;
-}
+} */
 
 .artists__btn{
     background-color: unset;
@@ -1394,12 +1395,12 @@ img{
 
 .event__item{
     width: 500px;
-    min-height: 700px;
     /* padding-top: 300px;
     background: url('../img/events-1.png') 100% 0% no-repeat;
     background-size: 500px 300px; */
     margin-right: 50px;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .event__image{
@@ -1423,8 +1424,9 @@ img{
 }
 
 .text-position-event{
-    width: 400px;
+    width: 405px;
     margin: 0 auto;
+    height: 320px;
 }
 
 .border-text-card{
@@ -1436,9 +1438,9 @@ img{
 
 .card-event-museum{
     text-align: right;
-    width: 135px;
+    width: 211px;
     position: relative;
-    left: 24em;
+    left: 221px;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -1467,6 +1469,8 @@ img{
     color: #9D5CD0;
     padding-bottom: 5px;
     transition: 0.2s ease-in-out;
+    position: absolute;
+    bottom: 40px;
 }
 
 .event-btn-position{
@@ -2215,11 +2219,13 @@ img{
 }
 
 .form-contacts-legend{
+    font-style: normal;
+    font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    color: #333;
+    color: #333333;
     margin: 0;
-    margin-bottom: 16px
+    margin-bottom: 19px
 }
 
 .social-caption{
@@ -2343,6 +2349,94 @@ img{
 }
 
 /* Адаптив */
+@media (max-width: 1671px){
+    .container{
+        max-width: 1400px;
+        width: 100%;
+    }
+
+    .menu-nav__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    .menu-list-nav-menu{
+        margin-right: 152px;
+    }
+
+    .gallery-preview {
+        width: 949px;
+    }
+
+    .publications-preview{
+        width: 949px;
+    }
+
+    .four-slider-container{
+        width: 1300px;
+    }
+
+    .form-contacts {
+        width: 1603px;
+        padding: 0 calc((100% - 1400px) / 2);
+        padding-top: 122px;
+        padding-bottom: 131px;
+    }
+
+    #map {
+        width: 900px;
+        height: 700px;
+        top: 0;
+        right: 0;
+    }
+
+    .hover-slider{
+        width: 253px;
+        height: 253px;
+        top: 51px;
+        left: 15px;
+    }
+
+    .event__item {
+        width: 440px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    .text-position-event{
+        width: 380px;
+    }
+    
+    .card-event-museum{
+        left: 180px;
+    }
+
+    .tooltip-2 {
+        right: 375px;
+    }
+
+    .tooltip-2-hover {
+        left: 72.15%;
+    }
+
+    .tooltip-3-hover {
+        top: 71px;
+        left: 32%;
+    }
+
+    .tooltip-1-hover {
+        top: 22px;
+        left: 21%;
+    }
+
+    .slide-partners__2{
+        padding: 44px 60px;
+    }
+
+    .slide-partners__4 {
+        padding: 39px 140px;
+    }
+}
+
 @media (max-width: 1024px){
     .container{
         /* max-width: 690px; */
