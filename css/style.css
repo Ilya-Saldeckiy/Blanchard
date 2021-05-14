@@ -166,6 +166,18 @@ img{
     background: url('../img/active-sign-in.svg') 0% 50% no-repeat;
 }
 
+.header__burger{
+    display: none;
+}
+
+.burger-close{
+    display: none;
+}
+
+.header__search-tablet{
+    display: none;
+}
+
 .top-banner{
     margin-top: 30px;
     height: 700px;
@@ -1954,6 +1966,7 @@ img{
     font-weight: 600;
     color: #fff;
     opacity: 0;
+    z-index: -10;
     position: absolute;
     transform: translateX(-50%);
     transition-property: z-index,outline,opacity;
@@ -2350,11 +2363,17 @@ img{
 
 /* Адаптив */
 @media (max-width: 1671px){
+
+    /* основные ================================================================================*/
+
     .container{
         max-width: 1400px;
         width: 100%;
     }
 
+/* =============================================================================================*/
+
+/* Шапка =======================================================================================*/
     .menu-nav__item:not(:last-child) {
         margin-right: 50px;
     }
@@ -2362,6 +2381,10 @@ img{
     .menu-list-nav-menu{
         margin-right: 152px;
     }
+
+/* ============================================================================================= */
+
+/* Слайдеры ============================================ */
 
     .gallery-preview {
         width: 949px;
@@ -2374,6 +2397,29 @@ img{
     .four-slider-container{
         width: 1300px;
     }
+
+    .gallery-slide{
+        height: calc((100% - 195px) / 2);
+    }
+
+    .hover-slider{
+        width: 253px;
+        height: 253px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .slide-partners__2{
+        padding: 44px 60px;
+    }
+
+    .slide-partners__4 {
+        padding: 39px 140px;
+    }
+
+/* ===================================================== */
+
+/* Основное ============================================ */
 
     .form-contacts {
         width: 1603px;
@@ -2389,13 +2435,6 @@ img{
         right: 0;
     }
 
-    .hover-slider{
-        width: 253px;
-        height: 253px;
-        top: 51px;
-        left: 15px;
-    }
-
     .event__item {
         width: 440px;
         margin-right: 40px;
@@ -2409,6 +2448,15 @@ img{
     .card-event-museum{
         left: 180px;
     }
+
+    .gallery-slide::after{
+        width: 100%;
+        height: 100%;
+    }
+
+/* ========================================================*/
+
+/* tooltip ================================================*/
 
     .tooltip-2 {
         right: 375px;
@@ -2428,25 +2476,636 @@ img{
         left: 21%;
     }
 
-    .slide-partners__2{
-        padding: 44px 60px;
+/* =========================================================*/
+}
+
+@media (max-width: 1401px){
+
+    /* основные ================================================================================*/
+
+    .container{
+        max-width: 100%;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
-    .slide-partners__4 {
-        padding: 39px 140px;
+    .header-container{
+        align-items: center;
     }
+
+/* =============================================================================================*/
+
+/* Шапка =======================================================================================*/
+.sign-in-btn {
+    width: 257px;
+    height: 60px;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: unset;
+    background: none;
+    text-align: center;
+    padding-left: 18px;
+    padding-right: 0px;
+    transition: background 0.2s ease-in-out;
+    display: block;
+    bottom: 51px;
+    /* margin-bottom: 231px; */
+    z-index: 9;
+    border: 2px solid #9D5CD0;
+    border-radius: 100px;
+}
+
+.sign-in-btn::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url('../img/sign-in-arrow.svg') 0% 50% no-repeat;
+    position: absolute;
+    left: 90px;
+
+}
+
+.menu-nav {
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    z-index: -9;
+    height: 868px;
+    opacity: 0;
+    padding-top: 96px;
+    padding-left: 50px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tablet-menu__active{
+    opacity: 1;
+    z-index: 9;
+}
+
+.tablet-menu__active .menu-nav{
+    opacity: 1;
+    z-index: 9;
+}
+
+.search-input__tablet{
+    display: none;
+    transition: display 0.3s ease-in-out;
+}
+
+.header__search-tablet {
+    display: block;
+}
+
+.under-menu{
+    display: none;
+}
+
+.header__burger{
+    width: 36px;
+    height: 28px;
+    display: inline-block;
+    background: url('../img/Burger.svg') 50% no-repeat;
+    background-color: unset;
+    margin-right: auto;
+}
+
+.burger-close{
+    display: block;
+    width: 29px;
+    height: 29px;
+    background: url('../img/btn-close-burger.svg') 50% no-repeat;
+    background-color: unset;
+    position: absolute;
+    top: 37px;
+    z-index: 10;
+}
+
+.logo{
+    margin-right: auto;
+    width: 187px;
+    height: 42px;
+}
+
+.search {
+    position: relative;
+    min-width: 0px;
+    max-height: 26px;
+    width: 0px;
+    transition: width .3s ease-in-out;
+}
+
+.menu-nav__item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 45px;
+}
+
+.menu-nav__item{
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+}
+
+.search-active{
+    width: 250px;
+    position: absolute;
+    right: 50px;
+}
+
+.search-active .search-input__tablet{
+    display: inline-block;
+    border-color: rgba(255, 255, 255, 0.85);
+}
+
+.search-input__tablet::placeholder{
+    opacity: 0;
+}
+
+.header {
+    margin-bottom: 95px;
+}
+
+/* ============================================================================================= */
+
+/* Слайдеры ==================================================================================== */
+
+.first-slider{
+    height: 768px;
+}
+
+.gallery-preview{
+    width: 594px;
+}
+
+.publications-preview {
+    width: 594px;
+}
+
+.publications-card-caption,.publications-text-card,.publications-price{
+    font-size: 16px;
+}
+
+.publications-btn{
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.four-slider-container {
+    width: 818px;
+}
+
+.gallery-slide {
+    height: calc((100% - 34px) / 2);
+}
+
+.gellary__modal{
+    width: 594px;
+    height: 594px;
+}
+
+.modal__img {
+    max-width: 264px;
+    width: 100%;
+    height: 100%;
+}
+
+.modal__img-position{
+    width: 264px;
+}
+
+.modal__text-position {
+    width: 231px;
+}
+
+
+/* ============================================================================================= */
+
+/* Основные ==================================================================================== */
+
+.slider-text {
+    margin-bottom: 313px;
+}
+
+.about-text{
+    width: 100%;
+}
+
+.section-about{
+    padding-bottom: 80px;
+}
+
+.tabs-text{
+    width: 100%;
+}
+
+.artists__list{
+    max-height: 500px;
+    max-width: 100%;
+}
+
+.event__item {
+    width: 290px;
+    margin-right: 27px;
+    margin-bottom: 27px;
+}
+
+.text-position-event {
+    width: 231px;
+    height: 380px;
+}
+
+.card-event-museum {
+    left: 32px;
+}
+
+.border-text-card {
+    padding-bottom: 50px;
+}
+
+.project-text{
+    width: 925px;
+}
+
+.form-contacts{
+    width: 100%;
+    padding: 0;
+    padding-left: 50px;
+    padding-top: 125px;
+    padding-bottom: 104px;
+}
+
+#map{
+    width: 500px;
+    height: 700px;
+}
+
+.gallery-filter{
+    width: 280px;
+    margin-right: auto;
+}
+
+.gallery-filter__text{
+    width: 100%;
+}
+
+.list-artists-position {
+    width: 100%;
+}
+
+.biography {
+    max-width: 437px;
+    width: 100%;
+}
+
+.biography-img{
+    width: 437px;
+    height: 274px;
+}
+
+.publications-filter {
+    margin-right: auto;
+}
+
+.gallery-filter__form {
+    margin-bottom: 356px;
+}
+
+.gallery-slide::after{
+    width: 100%;
+    height: 100%;
+}
+
+/* ============================================================================================= */
+
+/* tooltip ================================================*/
+
+.tooltip-2 {
+    left: 525px;
+    top: 170px;
+}
+
+.tooltip-2-hover {
+    left: 535px;
+    top: 56px;
+}
+
+.tooltip-3 {
+    top: 200px;
+    left: 100px;
+    outline: none;
+}
+
+.tooltip-3-hover {
+    top: 60px;
+    left: 107px;
+}
+
+.tooltip-1-hover {
+    top: -20px;
+    left: 635px;
+}
+
+.tooltip-1 {
+    top: 104px;
+    left: 629px;
+}
+
+.tooltip-1-hover::before, .tooltip-2-hover::before, .tooltip-3-hover::before{
+    width: 16px;
+    height: 16px;
+    transform: none;
+    background: url('../img/close-tool.svg') 50% no-repeat;
+    background-color: #9D5CD0;
+    border-radius: 100%;
+    bottom: -19px;
+    transform: translateX(-50%);
+}
+
+.tooltip-1-hover, .tooltip-2-hover, .tooltip-3-hover{
+    padding: 6px 9px;
+}
+
+.tooltip-position p{
+    margin: 0;
+}
+
+.toltipe-active .tooltip-1-hover{
+    opacity: 1;
+}
+/* =========================================================*/
+
+
 }
 
 @media (max-width: 1024px){
     .container{
-        /* max-width: 690px; */
+        max-width: 100%;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
     }
-}
 
-@media (max-width: 667px){
-    .container{
-        /* max-width: 345px; */
+    .slider-text__description{
+        margin-bottom: 107px;
     }
+
+    .first-slider {
+        height: 668px;
+    }
+
+    .slider-text {
+        margin-bottom: 172px;
+    }
+
+    .gallery-position{
+        flex-direction: column;
+    }
+
+    .publications-form__mobile{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 135px;
+    }
+
+    .publications-position{
+        flex-direction: column;
+    }
+
+    .publications-filter {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .publications-preview {
+        width: 614px;
+        width: 100%;
+    }
+
+    .position-biography{
+        flex-direction: column-reverse;
+    }
+
+    .list-artists-position{
+        margin-bottom: 50px;
+    }
+
+    .biography-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .biography {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .event__item:nth-last-child(-n+3){
+        display: none;
+    }
+     
+     .event-active .event__item:nth-last-child(-n+3){
+         display: block;
+    }
+
+    .event__item {
+        width: 48%;
+        margin-right: auto;
+    }
+
+    .event__item:nth-child(2n){
+        margin-right: 0;
+    }
+
+    .text-position-event {
+        width: 252px;
+        height: 350px;
+        margin-bottom: 50px;
+    }
+
+    .events__list{
+        margin-bottom: 20px;
+    }
+
+    .event__item:nth-child(3n) {
+        margin-right: auto;
+    }
+
+    .event__item:nth-last-child(-n+1){
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .project-text a {
+        color: #9D5CD0;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    .project-text {
+        width: 660px;
+    }
+
+    .contacts-input{
+        width: 335px;
+    }
+
+    #map {
+        width: 339px;
+        height: 700px;
+    }
+
+    .four-slider-container {
+        width: 562px;
+    }
+
+    .four-slide{
+        height: 106px;
+        padding: 0px;
+        text-align: center;
+        padding-top: 27px;
+    }
+
+    .swiper-button-prev-project {
+        top: 40px;
+        left: 0px;
+    }
+
+    .swiper-button-next-project {
+        top: 40px;
+        right: 0px;
+    }
+
+    .partners-img{
+        max-width: 210px;
+        height: 52px;
+    }
+
+    .tooltip-1 {
+        top: 168px;
+        left: 292px;
+        outline: none;
+    }
+
+    .tooltip-2 {
+        left: 198px;
+        top: 265px;
+        outline: none;
+    }
+
+    .tooltip-3 {
+        top: 297px;
+        left: 102px;
+        outline: none;
+    }
+
+    .tooltip-1-hover {
+        top: 95px;
+        left: 300px;
+    }
+
+    .tooltip-2-hover {
+        left: 200px;
+        top: 225px;
+    }   
+    
+    .tooltip-3-hover {
+        top: 225px;
+        left: 107px;
+    }
+
+    .tooltip-1:active::after,.tooltip-1:focus::after,.tooltip-1:hover:after,.tooltip-2:active::after,.tooltip-2:focus::after,.tooltip-2:hover:after,.tooltip-3:active::after,.tooltip-3:focus::after,.tooltip-3:hover:after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        background: url('../img/close-tool.svg') no-repeat;
+        left: 1.5px;
+        background-size: cover;
+        right: 0;
+        top: 1.5px;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .tooltip-1:active,.tooltip-1:focus,.tooltip-1:hover,.tooltip-2:active,.tooltip-2:focus,.tooltip-2:hover,.tooltip-3:active,.tooltip-3:focus,.tooltip-3:hover{
+        background-color: #9D5CD0;
+    }
+
+    .tooltip-1-hover::before, .tooltip-2-hover::before, .tooltip-3-hover::before{
+        display: none;
+    }
+
+    .tooltip-1-hover, .tooltip-2-hover, .tooltip-3-hover{
+        max-width: 235px;
+    }
+
+    .tooltip-1, .tooltip-2, .tooltip-3 {
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        border: 1px solid #9D5CD0;
+        display: block;
+        border-radius: 100%;
+        position: absolute;
+        cursor: pointer;
+        transition-property: z-index,outline,opacity;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .tooltip-1::after, .tooltip-2::after, .tooltip-3::after {
+        content: "i";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 5.5px;
+        right: 0;
+        font-weight: 600;
+        top: -9px;
+        font-size: 14px;
+        color: #9D5CD0;
+    }
+
+    .second-slider{
+        width: 100%;
+        height: 700px;
+        margin-bottom: 85px;
+    }
+
+    .gallery-preview {
+        width: 100%;
+    }
+
+    .gallery-filter__text-position{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .gallery-filter__form{
+        margin-bottom: 90px;
+    }
+
+    .menu-nav{
+        height: 770px;
+    }
+
+    .gellary__modal {
+        width: 668px;
+        height: 594px;
+    }
+
+    .modal__img {
+        max-width: 301px;
+    }
+
 }
 
 @media (max-width: 320px){

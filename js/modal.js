@@ -28,12 +28,26 @@ document.querySelectorAll('.gallery-slide').forEach(function(modal){
                 document.querySelector('.body').classList.remove('modal__fade')
             })
         })
-
-        window.addEventListener('click', function (e) {
-            if (!modal.contains(e.target)) {
-                closeModal();
-            }
-        });
         
     })
 })
+
+jQuery(function($){
+    $(document).mouseup(function (e){
+        var modalWindow = $(".gellary__modal");
+        var body = $(".body");
+        if (!modalWindow.is(e.target)
+            && modalWindow.has(e.target).length === 0) {
+                modalWindow.removeClass('modal__active');
+                body.removeClass('scroll-hidden');
+                body.removeClass('modal__fade'); 
+        }
+    });
+    $(document).mouseup(function (e){
+        var menu = $(".tablet-menu__active");
+        if (!menu.is(e.target)
+            && menu.has(e.target).length === 0) {
+                menu.removeClass('tablet-menu__active');
+        }
+    });
+});

@@ -20,6 +20,33 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 3,
         slidesPerColumn: 2,
         spaceBetween: 50,
+        slidesPerGroup: 3,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+            },
+            // when window width is >= 480px
+            769: {
+            slidesPerView: 2,
+            spaceBetween: 34,
+            slidesPerGroup: 2,
+            },
+            // when window width is >= 640px
+            1024: {
+            slidesPerView: 2,
+            spaceBetween: 34,
+            slidesPerGroup: 2,
+            },
+
+            1400: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            slidesPerGroup: 3,
+            }
+        },
         
         pagination: {
             el: '.pagination2',
@@ -43,6 +70,34 @@ document.addEventListener('DOMContentLoaded', function() {
     var swiper = new Swiper('.three-slider', {
         slidesPerView: 3,
         spaceBetween: 50,
+        slidesPerGroup: 3,
+
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+            },
+            // when window width is >= 480px
+            769: {
+            slidesPerView: 2,
+            spaceBetween: 34,
+            slidesPerGroup: 2,
+            },
+            // when window width is >= 640px
+            1025: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+            slidesPerGroup: 2,
+            },
+
+            1400: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            slidesPerGroup: 3,
+            }
+        },
         
         pagination: {
             el: '.pagination2',
@@ -60,6 +115,34 @@ document.addEventListener('DOMContentLoaded', function() {
         direction: 'horizontal',
         slidesPerView: 3,
         spaceBetween: 50,
+        slidesPerGroup: 3,
+
+        // Responsive breakpoints
+        breakpoints: {
+        // when window width is >= 320px
+        320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+        },
+        // when window width is >= 480px
+        769: {
+        slidesPerView: 2,
+        spaceBetween: 34,
+        slidesPerGroup: 2,
+        },
+        // when window width is >= 640px
+        1025: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+        slidesPerGroup: 2,
+        },
+
+        1400: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        slidesPerGroup: 3,
+        }
+        },
 
         pagination: {
             el: '.swiper-pagination',

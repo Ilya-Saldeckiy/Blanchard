@@ -26,9 +26,15 @@
     <header class="header">
         <div class="header-position">
             <div class="container header-container">
+                <button class="btn header__burger"></button>
                 <img src="img/logo.png" alt="logo" class="logo">
+                <form class="search header__search-tablet">
+                    <button type="button" aria-label="Поиск" class="search-button"></button>
+                    <input type="search" placeholder="Поиск по сайту" class="search-input search-input__tablet">
+                </form>
                 <h1 class="caption-hidden">Blanchard | Художественная галерея</h1>
                 <nav class="menu-nav">
+                    <button class="btn burger-close"></button>
                     <ul class="list-reset menu-nav menu-list-nav-menu">
                         <li class="menu-nav__item"><a href="#about" class="menu-nav__link">О
                                 нас</a></li>
@@ -1325,7 +1331,8 @@
                                 </div>
                                 <h3 class="list-artists-link">C 2000 г.</h3>
                                 <div class="list-artists-item">
-                                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического
+                                    <p>
+                                        Являясь всего лишь частью общей картины, непосредственные участники технического
                                         прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть
                                         своевременно верифицированы. Но высококачественный прототип будущего проекта
                                         является качественно новой ступенью первоочередных требований. А ещё некоторые
@@ -1333,8 +1340,10 @@
                                         континентально-европейского типа политической культуры, будут объявлены
                                         нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные
                                         признаки победы институционализации призывают нас к новым свершениям, которые, в
-                                        свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
-                                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут
+                                        свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                                    </p>
+                                    <p>
+                                        Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут
                                         быть призваны к ответу. Явные признаки победы институционализации набирают
                                         популярность среди определенных слоев населения, а значит, должны быть
                                         объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы,
@@ -1420,54 +1429,56 @@
                     <h2 class="main-caption publications-caption">Издания</h2>
                     <p class="form-publications-categori">Категории</p>
                     <form action="#" class="publications-form">
-                        <label for="check" class="label">
-                                <input class="checkbox" type="checkbox" name="check" id="check">
-                                <span class="checkbox-span">Бестселлеры</span>
-                        </label>
-                        <label for="check1" class="label">
-                            <input class="checkbox" type="checkbox" name="check" id="check1">
-                            <span class="checkbox-span">Искусство</span>
-                        </label>
-                        <label for="check2" class="label">
-                            <input class="checkbox" type="checkbox" name="check" id="check2">
-                            <span class="checkbox-span">Архитектура</span>
-                        </label>
-                        <label for="check3" class="label">
-                            <input class="checkbox" type="checkbox" name="check" id="check3">
-                            <span class="checkbox-span">Дизайн</span>
-                        </label>
-                        <label for="check4" class="label">
-                            <input class="checkbox" type="checkbox" name="check" id="check4">
-                            <span class="checkbox-span">Мода</span>
-                        </label>
-                        <label for="check5" class="label">
-                            <input class="checkbox" type="checkbox" name="check" id="check5">
-                            <span class="checkbox-span">Детям</span>
-                        </label>
-                        <label for="check6" class="label">
-                            <input class="checkbox" type="checkbox" name="check" id="check6">
-                            <span class="checkbox-span">Художественная литература</span>
-                        </label>
-                        <label for="check7" class="label">
-                            <input class="checkbox" type="checkbox" name="check" id="check7">
-                            <span class="checkbox-span">Публицистика</span>
-                        </label>
-                        <label for="check8" class="label">
-                            <input class="checkbox" type="checkbox" name="check" id="check8">
-                            <span class="checkbox-span">Путеводители</span>
-                        </label>
-                        <label for="check9" class="label">
-                            <input class="checkbox" type="checkbox" name="check" id="check9">
-                            <span class="checkbox-span">Философия</span>
-                        </label>
-                        <label for="check10" class="label">
-                            <input class="checkbox" type="checkbox" name="check" id="check10">
-                            <span class="checkbox-span">Учебная литература</span>
-                        </label>
-                        <label for="check11" class="label">
-                            <input class="checkbox" type="checkbox" name="check" id="check11">
-                            <span class="checkbox-span">Журналы и газеты</span>
-                        </label>
+                        <div class="publications-form__mobile">
+                            <label for="check" class="label">
+                                    <input class="checkbox" type="checkbox" name="check" id="check">
+                                    <span class="checkbox-span">Бестселлеры</span>
+                            </label>
+                            <label for="check1" class="label">
+                                <input class="checkbox" type="checkbox" name="check" id="check1">
+                                <span class="checkbox-span">Искусство</span>
+                            </label>
+                            <label for="check2" class="label">
+                                <input class="checkbox" type="checkbox" name="check" id="check2">
+                                <span class="checkbox-span">Архитектура</span>
+                            </label>
+                            <label for="check3" class="label">
+                                <input class="checkbox" type="checkbox" name="check" id="check3">
+                                <span class="checkbox-span">Дизайн</span>
+                            </label>
+                            <label for="check4" class="label">
+                                <input class="checkbox" type="checkbox" name="check" id="check4">
+                                <span class="checkbox-span">Мода</span>
+                            </label>
+                            <label for="check5" class="label">
+                                <input class="checkbox" type="checkbox" name="check" id="check5">
+                                <span class="checkbox-span">Детям</span>
+                            </label>
+                            <label for="check6" class="label">
+                                <input class="checkbox" type="checkbox" name="check" id="check6">
+                                <span class="checkbox-span">Художественная литература</span>
+                            </label>
+                            <label for="check7" class="label">
+                                <input class="checkbox" type="checkbox" name="check" id="check7">
+                                <span class="checkbox-span">Публицистика</span>
+                            </label>
+                            <label for="check8" class="label">
+                                <input class="checkbox" type="checkbox" name="check" id="check8">
+                                <span class="checkbox-span">Путеводители</span>
+                            </label>
+                            <label for="check9" class="label">
+                                <input class="checkbox" type="checkbox" name="check" id="check9">
+                                <span class="checkbox-span">Философия</span>
+                            </label>
+                            <label for="check10" class="label">
+                                <input class="checkbox" type="checkbox" name="check" id="check10">
+                                <span class="checkbox-span">Учебная литература</span>
+                            </label>
+                            <label for="check11" class="label">
+                                <input class="checkbox" type="checkbox" name="check" id="check11">
+                                <span class="checkbox-span">Журналы и газеты</span>
+                            </label>
+                        </div>
                         <div class="price-filter">
                             <p class="price-filter-caption">Цена</p>
                             <div class="price-filter-position">
@@ -1481,7 +1492,7 @@
                 </div>
                 <div class="publications-preview">
                     <div class="swiper-container three-slider">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper three-slider-wrapper">
                             <div class="swiper-slide publications-slide">
                                     <img class="publications__image" src="img/three-slider-slide-1.png" alt="Картинка1">
                                 <div class="publications-card">
@@ -1645,11 +1656,11 @@
             <div class="position-contacts">
             <div class="form-contacts">
                 <h3 class="form-contacts-caption">Шоурум №4</h3>
-                <p class="form-contacts-adress">Леонтьевский переулок, дом 5, строение 1</p>
+                <p class="form-contacts-adress">Леонтьевский переулок, дом 5, строение 3</p>
                 <form action="js/mail.php" enctype="multipart/form-data" class="form" method="POST" id="form">
                     <input type="hidden" name="admin_email[]" value="melllllowtoy@yandex.ru">
 		            <input type="hidden" name="form_subject" value="Тема письма">
-                    <h4 class="form-contacts-legend">Заказать обратный звонок</h4>
+                    <h3 class="form-contacts-legend">Заказать обратный звонок</h3>
                     <input class="contacts-input" type="text" placeholder="Имя*" name="name" required>
                     <input class="contacts-input" type="tel" placeholder="Телефон*" data-validate-field="tel" name="tel" required>
                     <button class="btn contact-form-btn" type="submit" name="submit">Заказать</button>
@@ -1694,6 +1705,8 @@
     <script src="js/mask.js"></script>
     <script src="js/just-validate.min.js"></script>
 	<script src="js/script.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/tooltip.js"></script>
 </body>
 
 </html>
