@@ -18,6 +18,7 @@
   }
   :root {
     --swiper-theme-color: #007aff;
+    --swiper-pagination-color: #666
   }
   .swiper-container {
     margin-left: auto;
