@@ -24,12 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Responsive breakpoints
         breakpoints: {
             // when window width is >= 320px
-            320: {
-            slidesPerView: 2,
-            spaceBetween: 20
+            319: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            slidesPerColumn: 1,
+            slidesPerGroup: 1,
             },
             // when window width is >= 480px
-            769: {
+            768: {
             slidesPerView: 2,
             spaceBetween: 34,
             slidesPerGroup: 2,
@@ -58,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
             prevEl: '.swiper-button-prev',
         },
     });
+    
 
     $(function() {
         $( ".accordion" ).accordion({
@@ -67,49 +70,50 @@ document.addEventListener('DOMContentLoaded', function() {
         } );
     });
 
-    var swiper = new Swiper('.three-slider', {
-        slidesPerView: 3,
-        spaceBetween: 50,
-        slidesPerGroup: 3,
-
-        // Responsive breakpoints
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-            slidesPerView: 2,
-            spaceBetween: 20
-            },
-            // when window width is >= 480px
-            769: {
-            slidesPerView: 2,
-            spaceBetween: 34,
-            slidesPerGroup: 2,
-            },
-            // when window width is >= 640px
-            1025: {
-            slidesPerView: 2,
-            spaceBetween: 50,
-            slidesPerGroup: 2,
-            },
-
-            1400: {
+    if (window.matchMedia('(min-width: 768px)').matches) {
+        var swiper = new Swiper('.three-slider', {
             slidesPerView: 3,
             spaceBetween: 50,
             slidesPerGroup: 3,
-            }
-        },
-        
-        pagination: {
-            el: '.pagination2',
-            type: 'fraction',
-        },
 
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 2,
+                spaceBetween: 20
+                },
+                // when window width is >= 480px
+                769: {
+                slidesPerView: 2,
+                spaceBetween: 34,
+                slidesPerGroup: 2,
+                },
+                // when window width is >= 640px
+                1025: {
+                slidesPerView: 2,
+                spaceBetween: 50,
+                slidesPerGroup: 2,
+                },
 
+                1400: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+                slidesPerGroup: 3,
+                }
+            },
+            
+            pagination: {
+                el: '.pagination2',
+                type: 'fraction',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }
 
     var mySwiper = new Swiper('.four-slider-container', {
         direction: 'horizontal',
@@ -121,8 +125,9 @@ document.addEventListener('DOMContentLoaded', function() {
         breakpoints: {
         // when window width is >= 320px
         320: {
-        slidesPerView: 2,
-        spaceBetween: 20
+        slidesPerView: 1,
+        spaceBetween: 20,
+        slidesPerGroup: 1,
         },
         // when window width is >= 480px
         769: {
@@ -159,7 +164,43 @@ document.addEventListener('DOMContentLoaded', function() {
         // },
     })
 
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        new Swiper('.cards', {
+          wrapperClass: 'cards__list',
+          slideClass: 'cards__item',
+          navigation: false,
+          scrollbar: false,
+          pagination: {
+            el: '.events__pagination',
+            type: 'bullets',
+          },
+          spaceBetween: 50,
+          a11y: {
+            firstSlideMessage: 'Это первая карточка',
+            lastSlideMessage: 'Это последняя карточка',
+            paginationBulletMessage: 'Карточка номер {{index}}',
+            prevSlideMessage: 'Предыдущая карточка',
+            nextSlideMessage: 'Следующая карточка',
+          },
+        });
+      }
 
+    let addPadding = document.querySelector('.choices');
+    let secondSlider = document.querySelector('.second-slider')
+
+    addPadding.addEventListener('click', function () {
+        secondSlider.classList.toggle('padding__active')
+    })
+
+    let categoriButton = document.querySelector('.label')
+    let filterBlock = document.querySelector('.publications-form__mobile')
+    
+    categoriButton.addEventListener('click', function () {
+        filterBlock.classList.add('label__disable')
+    })
+
+
+    
 
 
 })
