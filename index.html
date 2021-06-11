@@ -32,6 +32,12 @@
                     <button type="button" aria-label="Поиск" class="search-button"></button>
                     <input type="search" placeholder="Поиск по сайту" class="search-input search-input__tablet">
                 </form>
+                <div class="search__form--mobile">
+                    <form class="search header__search-tablet">
+                        <button type="button" aria-label="Поиск" class="search-button"></button>
+                        <input type="search" placeholder="Поиск по сайту" class="search-input search-input__tablet">
+                    </form>
+                </div>
                 <h1 class="caption-hidden">Blanchard | Художественная галерея</h1>
                 <nav class="menu-nav">
                     <button class="btn burger-close"></button>
@@ -249,9 +255,11 @@
                                 <div class="hover-slider"></div>
                             </div>
                         </div>
-                        <div class="swiper-pagination pagination2"></div>
-                        <div class="swiper-button-next swiper-button-next-gallery" aria-disabled="true"></div>
-                        <div class="swiper-button-prev swiper-button-prev-gallery"></div>
+                        <div class="mobile__position-pagination">
+                            <div class="swiper-pagination pagination2"></div>
+                            <div class="swiper-button-next swiper-button-next-gallery" aria-disabled="true"></div>
+                            <div class="swiper-button-prev swiper-button-prev-gallery"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="gellary__modal" data-target="Modal-1">
@@ -1359,67 +1367,70 @@
         <section class="section-events" id="event">
             <div class="container">
                 <h2 class="main-caption">События</h2>
-                <ul class="list-reset events__list">
-                    <li class="event__item">
-                        <img class="event__image" src="img/events-1.png" alt="Карточка-1">
-                        <div class="border-text-card">
-                            <div class="text-position-event">
-                                <p class="card-event-museum">Музей им. Щусева <br>с 20 марта по 30 апреля</p>
-                                <h3 class="card-events-caption">Книжная гравюра в живом восприятии</h3>
-                                <p class="card-events-text">Один из ведущих флорентийских художников Кватроченто,
-                                    основатель художественной династии, которую продолжили его брат Давид и сын
-                                    Ридольфо.</p>
-                                <a href="#" class="card-events-link">Подробнее</a>
+                <div class="cards slider paintings gallery__paintings swiper-container swiper-container-initialized swiper-container-horizontal">
+                    <ul class="cards__list list-reset events__list swiper-wrapper">
+                        <li class="cards__item event__item swiper-slide">
+                            <img class="event__image" src="img/events-1.png" alt="Карточка-1">
+                            <div class="border-text-card">
+                                <div class="text-position-event">
+                                    <p class="card-event-museum">Музей им. Щусева <br>с 20 марта по 30 апреля</p>
+                                    <h3 class="card-events-caption">Книжная гравюра в живом восприятии</h3>
+                                    <p class="card-events-text">Один из ведущих флорентийских художников Кватроченто,
+                                        основатель художественной династии, которую продолжили его брат Давид и сын
+                                        Ридольфо.</p>
+                                    <a href="#" class="card-events-link">Подробнее</a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="event__item">
-                        <img class="event__image" src="img/events-2.png" alt="Карточка-2">
-                        <div class="border-text-card">
-                            <div class="text-position-event">
-                                <p class="card-event-museum">ММОМА<br>24 марта 19:00</p>
-                                <h3 class="card-events-caption">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                                <p class="card-events-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
-                                <a href="#" class="card-events-link">Подробнее</a>
+                        </li>
+                        <li class="cards__item event__item swiper-slide">
+                            <img class="event__image" src="img/events-2.png" alt="Карточка-2">
+                            <div class="border-text-card">
+                                <div class="text-position-event">
+                                    <p class="card-event-museum">ММОМА<br>24 марта 19:00</p>
+                                    <h3 class="card-events-caption">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                                    <p class="card-events-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+                                    <a href="#" class="card-events-link">Подробнее</a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="event__item">
-                        <img class="event__image" src="img/events-3.png" alt="Карточка-3">
-                        <div class="border-text-card">
-                            <div class="text-position-event">
-                                <p class="card-event-museum">Еврейский музей <br>с 31 марта по 21 апреля</p>
-                                <h3 class="card-events-caption">Выставка «Формация 2020»</h3>
-                                <p class="card-events-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
-                                <a href="#" class="card-events-link">Подробнее</a>
+                        </li>
+                        <li class="cards__item event__item swiper-slide">
+                            <img class="event__image" src="img/events-3.png" alt="Карточка-3">
+                            <div class="border-text-card">
+                                <div class="text-position-event">
+                                    <p class="card-event-museum">Еврейский музей <br>с 31 марта по 21 апреля</p>
+                                    <h3 class="card-events-caption">Выставка «Формация 2020»</h3>
+                                    <p class="card-events-text">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+                                    <a href="#" class="card-events-link">Подробнее</a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="event__item">
-                        <img class="event__image" src="img/events-4.png" alt="Карточка-4">
-                        <div class="border-text-card">
-                            <div class="text-position-event">
-                                <p class="card-event-museum">Третьяковка на Крымском валу <br>с 30 марта по 30 апреля</p>
-                                <h3 class="card-events-caption">XXIV Международная биеннале молодого искусства</h3>
-                                <p class="card-events-text">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
-                                <a href="#" class="card-events-link">Подробнее</a>
+                        </li>
+                        <li class="cards__item event__item swiper-slide">
+                            <img class="event__image" src="img/events-4.png" alt="Карточка-4">
+                            <div class="border-text-card">
+                                <div class="text-position-event">
+                                    <p class="card-event-museum">Третьяковка на Крымском валу <br>с 30 марта по 30 апреля</p>
+                                    <h3 class="card-events-caption">XXIV Международная биеннале молодого искусства</h3>
+                                    <p class="card-events-text">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
+                                    <a href="#" class="card-events-link">Подробнее</a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="event__item">
-                        <img class="event__image" src="img/events-5.png" alt="Карточка-5">
-                        <div class="border-text-card">
-                            <div class="text-position-event">
-                                <p class="card-event-museum">ММАМ <br>с 8 апреля по 20 мая</p>
-                                <h3 class="card-events-caption">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-                                <p class="card-events-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-                                <a href="#" class="card-events-link">Подробнее</a>
+                        </li>
+                        <li class="cards__item event__item swiper-slide">
+                            <img class="event__image" src="img/events-5.png" alt="Карточка-5">
+                            <div class="border-text-card">
+                                <div class="text-position-event">
+                                    <p class="card-event-museum">ММАМ <br>с 8 апреля по 20 мая</p>
+                                    <h3 class="card-events-caption">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                                    <p class="card-events-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                                    <a href="#" class="card-events-link">Подробнее</a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
                 <div class="event-btn-position">
                     <button type="button" class="btn event-btn">Все события</button>
+                    <div class="events__pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active events__active-bulet"></span><span class="swiper-pagination-bullet events__active-bulet"></span><span class="swiper-pagination-bullet events__active-bulet"></span><span class="swiper-pagination-bullet events__active-bulet"></span><span class="swiper-pagination-bullet events__active-bulet"></span></div>
                 </div>
             </div>
         </section>
@@ -1427,56 +1438,108 @@
             <div class="container publications-position">
                 <div class="publications-filter">
                     <h2 class="main-caption publications-caption">Издания</h2>
-                    <p class="form-publications-categori">Категории</p>
+                    <button class="btn form-publications-categori" tabindex="-1">Категории
+                        <svg class="publications__ico" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.3393 1.16934L6.16992 6.33869L1.00058 1.16934" stroke="white"/>
+                        </svg>
+                    </button>
                     <form action="#" class="publications-form">
                         <div class="publications-form__mobile">
                             <label for="check" class="label">
-                                    <input class="checkbox" type="checkbox" name="check" id="check">
+                                    <input class="checkbox active__check" type="checkbox" name="check" id="check">
                                     <span class="checkbox-span">Бестселлеры</span>
+                                    <svg class="label__icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
+                                    </svg>
                             </label>
                             <label for="check1" class="label">
                                 <input class="checkbox" type="checkbox" name="check" id="check1">
                                 <span class="checkbox-span">Искусство</span>
+                                <svg class="label__icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
+                                </svg>
                             </label>
                             <label for="check2" class="label">
                                 <input class="checkbox" type="checkbox" name="check" id="check2">
                                 <span class="checkbox-span">Архитектура</span>
+                                <svg class="label__icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
+                                </svg>
                             </label>
-                            <label for="check3" class="label">
-                                <input class="checkbox" type="checkbox" name="check" id="check3">
+                            <label for="check3" class="label checkbox__active">
+                                <input class="checkbox" type="checkbox" name="check" id="check3" checked>
                                 <span class="checkbox-span">Дизайн</span>
+                                <svg class="label__icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
+                                </svg>
                             </label>
                             <label for="check4" class="label">
                                 <input class="checkbox" type="checkbox" name="check" id="check4">
                                 <span class="checkbox-span">Мода</span>
+                                <svg class="label__icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
+                                </svg>
                             </label>
                             <label for="check5" class="label">
                                 <input class="checkbox" type="checkbox" name="check" id="check5">
                                 <span class="checkbox-span">Детям</span>
+                                <svg class="label__icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
+                                </svg>
                             </label>
                             <label for="check6" class="label">
                                 <input class="checkbox" type="checkbox" name="check" id="check6">
                                 <span class="checkbox-span">Художественная литература</span>
+                                <svg class="label__icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
+                                </svg>
                             </label>
                             <label for="check7" class="label">
                                 <input class="checkbox" type="checkbox" name="check" id="check7">
                                 <span class="checkbox-span">Публицистика</span>
+                                <svg class="label__icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
+                                </svg>
                             </label>
                             <label for="check8" class="label">
                                 <input class="checkbox" type="checkbox" name="check" id="check8">
                                 <span class="checkbox-span">Путеводители</span>
+                                <svg class="label__icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
+                                </svg>
                             </label>
                             <label for="check9" class="label">
                                 <input class="checkbox" type="checkbox" name="check" id="check9">
                                 <span class="checkbox-span">Философия</span>
+                                <svg class="label__icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
+                                </svg>
                             </label>
                             <label for="check10" class="label">
                                 <input class="checkbox" type="checkbox" name="check" id="check10">
                                 <span class="checkbox-span">Учебная литература</span>
+                                <svg class="label__icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
+                                </svg>
                             </label>
                             <label for="check11" class="label">
                                 <input class="checkbox" type="checkbox" name="check" id="check11">
                                 <span class="checkbox-span">Журналы и газеты</span>
+                                <svg class="label__icon" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
+                                    </svg>
                             </label>
                         </div>
                         <div class="price-filter">
@@ -1620,7 +1683,7 @@
                     обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения
                     сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной
                     неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное <span
-                        class="text-tooltip-position">информационно&nbsp;-&nbsp;пропагандистское</span>&nbsp;обеспечение
+                        class="text-tooltip-position">информационно&nbsp;-&nbsp;пропагандистское</span> обеспечение
                     нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых
                     решений. И нет сомнений, что действия представителей оппозиции могут быть <span
                         class="text-tooltip-position">рассмотрены</span> исключительно в разрезе маркетинговых и <span
@@ -1652,11 +1715,17 @@
         <section class="section-contacts" id="contacts">
             <div class="container">
                 <h2 class="main-caption">Контакты</h2>
+                <div class="mobile__adress">
+                    <h3 class="form-contacts-caption">Шоурум №4</h3>
+                    <p class="form-contacts-adress">Леонтьевский переулок, дом 5, строение 3</p>
+                </div>
             </div>
             <div class="position-contacts">
             <div class="form-contacts">
-                <h3 class="form-contacts-caption">Шоурум №4</h3>
-                <p class="form-contacts-adress">Леонтьевский переулок, дом 5, строение 3</p>
+                <div class="desctop__adress">
+                    <h3 class="form-contacts-caption">Шоурум №4</h3>
+                    <p class="form-contacts-adress">Леонтьевский переулок, дом 5, строение 3</p>
+                </div>
                 <form action="js/mail.php" enctype="multipart/form-data" class="form" method="POST" id="form">
                     <input type="hidden" name="admin_email[]" value="melllllowtoy@yandex.ru">
 		            <input type="hidden" name="form_subject" value="Тема письма">
