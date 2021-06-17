@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.querySelectorAll('.france-biographi-state').forEach(function(tabContent) {
                     tabContent.classList.remove('open-biograph')
                 })
-                
+
                 document.querySelector(`[data-target='${path}']`).classList.add('open-biograph')
 
             }
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     tabContent.classList.remove('open-biograph')
                 })
                 document.querySelector(`[data-target='${path}']`).classList.add('open-biograph')
-            
+
             }
         })
     })
@@ -137,3 +137,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
 })
+
+$(".artists__btn").click(function() {
+  $('html, body').animate({
+    scrollTop: $(".biography").offset().top
+  }, 1000);
+});

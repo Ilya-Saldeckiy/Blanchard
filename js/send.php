@@ -1,19 +1,48 @@
-<?
-if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['tel'])&&$_POST['tel']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
-        $to = 'melllllowtoy@yandex.ru'; //Почта получателя, через запятую можно указать сколько угодно адресов
-        $subject = 'Обратный звонок'; //Загаловок сообщения
-        $message = '
-                <html>
-                    <head>
-                        <title>'.$subject.'</title>
-                    </head>
-                    <body>
-                        <p>Имя: '.$_POST['name'].'</p>
-                        <p>Телефон: '.$_POST['tel'].'</p>                        
-                    </body>
-                </html>'; //Текст нащего сообщения можно использовать HTML теги
-        $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-        $headers .= "From: Отправитель <from@example.com>\r\n"; //Наименование и почта отправителя
-        mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
-}
-?>
+<?php
+ if($_POST)
+ {
+ $to_Email = "melllllowtoy@yandex.ru";
+ $subject = 'Запрос обратного звонка '.$_POST["polz_name"];
+
+ if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
+
+ $otvet_serv = json_encode(
+ array(
+ 'text' => 'Возникла ошибка при отправке данных'
+ ));
+
+ die($otvet_serv);
+ }
+
+ if(!isset($_POST["polz_name"]) || !isset($_POST["polz_tel"]))
+ {
+ $otvet_serv = json_encode(array('type'=>'error', 'text' => 'Заполните форму'));
+ die($otvet_serv);
+ }
+
+ $user_Name = filter_var($_POST["polz_name"], FILTER_SANITIZE_STRING);
+ $user_Phone = filter_var($_POST["polz_tel"], FILTER_SANITIZE_STRING);
+
+ if(strlen($user_Name)<3)
+ {
+ $otvet_serv = json_encode(array('text' => 'Поле Имя слишком короткое или пустое'));
+ die($otvet_serv);
+ }
+ if(!is_numeric($user_Phone))
+ {
+ $otvet_serv = json_encode(array('text' => 'Номер телефона может состоять только из цифр'));
+ die($otvet_serv);
+ }
+
+ $message = "Имя: ".$user_Name.". Телефон: ".$user_Phone;
+
+ if(!mail($to_Email, $subject, $message, "From: info@webriz.ru \r\n"))
+ {
+ $otvet_serv = json_encode(array('text' => 'Не могу отправить почту! Пожалуйста, проверьте ваши настройки PHP почты.'));
+ die($otvet_serv);
+ }else{
+ $otvet_serv = json_encode(array('text' => 'Спасибо! '.$user_Name .', ваше сообщение отправлено.'));
+ die($otvet_serv);
+ }
+ }
+ ?>
